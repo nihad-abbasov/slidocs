@@ -1,56 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-
-const templates = [
-  {
-    id: 1,
-    name: "Services",
-    imgUrl: "/templates/temp1.webp",
-    category: "Services",
-    amountAvailable: 15,
-  },
-  {
-    id: 2,
-    name: "Services",
-    imgUrl: "/templates/temp2.webp",
-    category: "Services",
-    amountAvailable: 20,
-  },
-  {
-    id: 3,
-    name: "Services",
-    imgUrl: "/templates/temp3.webp",
-    category: "Services",
-    amountAvailable: 10,
-  },
-  {
-    id: 4,
-    name: "Services",
-    imgUrl: "/templates/temp4.webp",
-    category: "Services",
-    amountAvailable: 20,
-  },
-  {
-    id: 5,
-    name: "Services",
-    imgUrl: "/templates/temp5.webp",
-    category: "Services",
-    amountAvailable: 15,
-  },
-  {
-    id: 6,
-    name: "Services",
-    imgUrl: "/templates/temp6.webp",
-    category: "Services",
-    amountAvailable: 18,
-  },
-];
+import { templates } from "../../../../../db";
 
 export const Templates = () => {
   return (
     <section>
-      <article className="w-full flex flex-row justify-between items-center mb-[2em]">
-        <h4>Templastes</h4>
+      <article className="w-full flex flex-row justify-between items-center mb-[3em]">
+        <h4 className="text-[40px] font-bold">Templastes</h4>
         <Link
           href="/templates"
           target="_blank"
@@ -63,7 +19,7 @@ export const Templates = () => {
 
       <article>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
-          {templates.map((temp) => {
+          {templates.slice(0, 6).map((temp) => {
             return (
               <li className="card cursor-pointer" key={temp.id}>
                 <Link
