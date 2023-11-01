@@ -2,11 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "../../reusable/Logo";
 
-const headerElements = [
-  { id: 1, name: "Page 1", url: "url-1" },
-  { id: 2, name: "Page 2", url: "url-2" },
-  { id: 3, name: "Page 3", url: "url-3" },
-];
+const headerElements = [{ id: 1, name: "Pricing", url: "/pricing" }];
 
 export const Header = () => {
   return (
