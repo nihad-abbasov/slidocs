@@ -10,12 +10,14 @@ const platforms = [
 export const TopStatistics = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between">
-      <article className="stat_left w-full md:w-[60%]">
+      <article className="stat_left w-full md:w-[50%]">
         <Slider />
       </article>
 
-      <article className="stat_right w-full md:w-[35%] flex flex-col items-center justify-between">
-        <div className="stat_right_top w-full flex flex-row items-center justify-between">
+      <article className="stat_right w-full md:w-[45%] grid grid-cols-1 gap-4 justify-content-between">
+        {/* flex flex-col items-center  */}
+        <div className="stat_right_top w-full grid grid-cols-2 gap-4">
+          {/* flex flex-row items-center justify-between */}
           <div className="card">
             <ul>
               <li>
@@ -32,7 +34,6 @@ export const TopStatistics = () => {
               <li>Unique slides in library</li>
             </ul>
           </div>
-
           <div className="card">
             <ul>
               <li>
@@ -50,9 +51,8 @@ export const TopStatistics = () => {
             </ul>
           </div>
         </div>
-
         <div className="stat_right_bottom w-full">
-          <div className="card flex flex-row justify-between items-center p-96">
+          <div className="card flex flex-row justify-between items-center !py-[4em] !px-[2em]">
             <h3>Works with:</h3>
             <ul className="flex flex-row justify-between items-center">
               {platforms.map((plat) => {

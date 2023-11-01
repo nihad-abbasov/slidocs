@@ -11,7 +11,7 @@ export const Templates = () => {
           href="/templates"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-black text-white p-5 rounded-full hover:shadow-2xl transition-shadow duration-300"
+          className="bg-black text-white py-2 px-4 md:p-5 rounded-full hover:shadow-2xl transition-shadow duration-300"
         >
           See all slides
         </Link>
