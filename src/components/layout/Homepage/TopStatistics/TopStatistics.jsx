@@ -9,12 +9,12 @@ const platforms = [
 
 export const TopStatistics = () => {
   return (
-    <section className="flex flex-row items-center justify-between">
-      <article className="stat_left w-[60%]">
+    <section className="flex flex-col md:flex-row items-center justify-between">
+      <article className="stat_left w-full md:w-[60%]">
         <Slider />
       </article>
 
-      <article className="stat_right w-[35%] flex flex-col items-center justify-between">
+      <article className="stat_right w-full md:w-[35%] flex flex-col items-center justify-between">
         <div className="stat_right_top w-full flex flex-row items-center justify-between">
           <div className="card">
             <ul>

@@ -62,7 +62,7 @@ export const Templates = () => {
       </article>
 
       <article>
-        <ul className="grid grid-cols-3 gap-7">
+        <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {templates.map((temp) => {
             return (
               <li className="card cursor-pointer" key={temp.id}>

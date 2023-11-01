@@ -47,6 +47,12 @@ section {
   margin: 0 auto;
 }
 
+@media (max-width: 600px) {
+  .container {
+    width: 92%;
+  }
+}
+
 .footer_unique_container {
   width: 80%;
   margin: 2em auto 3em;

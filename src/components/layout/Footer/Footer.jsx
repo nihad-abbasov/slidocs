@@ -11,8 +11,8 @@ const footerElements = [
 export const Footer = () => {
   return (
     <footer className="footer_unique_container bg-white p-6 rounded-xl">
-      <div className="footer_wrapper grid grid-cols-3 justify-items-center">
-        <div className="w-[60%] flex flex-col justify-between">
+      <div className="footer_wrapper grid grid-cols-1 md:grid-cols-3 justify-items-center">
+        <div className="w-[60%] flex flex-col justify-between items-center md:items-start">
           <Logo />
           <p className="font-light text-sm">
             &copy; 2023 <a href="https://www.sliddex.com">sliddex.com</a>
@@ -32,7 +32,7 @@ export const Footer = () => {
             })}
           </ul>
         </div>
-        <div className="footer-contact_info bg-[#6b53fd] text-white p-7 rounded-[35px] w-[60%]">
+        <div className="footer-contact_info bg-[#6b53fd] text-white p-7 rounded-[35px] w-full md:w-[60%]">
           <div className="footer-contact_info-content flex flex-col justify-around h-full">
             <p className="flex flex-col items-start font-light">
               <span>Have a question?</span>
