@@ -52,7 +52,7 @@ export const TopStatistics = () => {
           </div>
         </div>
         <div className="stat_right_bottom w-full">
-          <div className="card flex flex-row justify-between items-center !py-[4em] !px-[2em]">
+          <div className="card flex flex-row justify-between items-center !p-[2em] md:!py-[4em] md:!px-[2em]">
             <h3>Works with:</h3>
             <ul className="flex flex-row justify-between items-center">
               {platforms.map((plat) => {
