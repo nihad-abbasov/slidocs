@@ -51,7 +51,7 @@ export const TemplatesPage = () => {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full"
+                    className="w-[90%] mx-auto px-5 py-7 flex flex-col justify-between items-center gap-3"
                   />
                   <div className="temp_detailes w-full flex flex-row justify-between items-center">
                     <h5>{temp.category}</h5>
