@@ -1,3 +1,4 @@
+// templates
 export const templates = [
   {
     id: 1,
@@ -123,3 +124,43 @@ export const templates = [
 export const templatesShortList = templates.slice(0, 6);
 
 export const templatesAmount = templates.length;
+
+// top slides
+export const slides = [
+  {
+    id: 1,
+    name: "Slide 1",
+    imgUrl: "/slide.webp",
+    text: "Pitch Deck Template that saves you ton of time",
+  },
+  {
+    id: 2,
+    name: "Slide 2",
+    imgUrl: "/slide.webp",
+    text: "Lorem ipsum sit amet nolin pilom kante kondogbia",
+  },
+  {
+    id: 3,
+    name: "Slide 3",
+    imgUrl: "/slide.webp",
+    text: "Milan pirlo Ibrahimovic maldini cafu zidane",
+  },
+  {
+    id: 4,
+    name: "Slide 4",
+    imgUrl: "/slide.webp",
+    text: "Pitch Deck Template that saves you ton of time",
+  },
+  {
+    id: 5,
+    name: "Slide 5",
+    imgUrl: "/slide.webp",
+    text: "Lorem ipsum sit amet nolin pilom kante kondogbia",
+  },
+  {
+    id: 6,
+    name: "Slide 6",
+    imgUrl: "/slide.webp",
+    text: "Milan pirlo Ibrahimovic maldini cafu zidane",
+  },
+];

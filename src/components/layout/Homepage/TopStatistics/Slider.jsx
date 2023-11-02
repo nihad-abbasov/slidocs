@@ -3,27 +3,7 @@
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Image from "next/image";
-
-const slides = [
-  {
-    id: 1,
-    name: "Slide 1",
-    imgUrl: "/slide.webp",
-    text: "Pitch Deck Template that saves you ton of time",
-  },
-  {
-    id: 2,
-    name: "Slide 2",
-    imgUrl: "/slide.webp",
-    text: "Lorem ipsum sit amet nolin pilom kante kondogbia",
-  },
-  {
-    id: 3,
-    name: "Slide 3",
-    imgUrl: "/slide.webp",
-    text: "Milan pirlo Ibrahimovic maldini cafu zidane",
-  },
-];
+import { slides } from "../../../../../db.js";
 
 const SlideOptions = {
   type: "fade",
@@ -47,9 +27,9 @@ export const Slider = () => {
                 width={0}
                 height={0}
                 sizes="100vw"
-                className="w-[100%] h-full my-0 mx-auto"
+                className="w-[100%] h-full my-0 mx-auto rounded-[35px]"
               />
-              <h2 className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left text-3xl text-white font-semibold w-[70%]">
+              <h2 className="absolute top-[55%] md:top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-left text-lg md:text-4xl text-white font-semibold w-[80%] md:w-[75%]">
                 {slide.text}
               </h2>
             </div>

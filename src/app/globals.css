@@ -26,6 +26,19 @@ body {
     rgb(var(--background-start-rgb));
 } */
 
+* {
+  animation: 2s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 html,
 body {
   box-sizing: border-box;
@@ -89,10 +102,10 @@ section:first-child {
 } */
 
 .splide__pagination {
-  bottom: 2.5rem !important;
+  bottom: 2rem !important;
   border-top: 0.1px solid #fff;
   width: 80%;
   margin: 0 auto !important;
-  padding-top: 2em !important;
-  padding-bottom: 1em !important;
+  padding-top: 1em !important;
+  padding-bottom: 0.5em !important;
 }

@@ -11,7 +11,7 @@ const platforms = [
 export const TopStatistics = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between">
-      <article className="stat_left w-full md:w-[50%]">
+      <article className="stat_left w-full md:w-[50%] mb-[1em] md:mb-0">
         <Slider />
       </article>
 
@@ -20,7 +20,7 @@ export const TopStatistics = () => {
         <div className="stat_right_top w-full grid grid-cols-2 gap-4">
           {/* flex flex-row items-center justify-between */}
           <div className="card">
-            <ul>
+            <ul className="py-[2em] px-[1em]">
               <li>
                 <Image
                   src="/folder.svg"
@@ -36,7 +36,7 @@ export const TopStatistics = () => {
             </ul>
           </div>
           <div className="card">
-            <ul>
+            <ul className="py-[2em] px-[1em]">
               <li>
                 <Image
                   src="/categories.svg"
