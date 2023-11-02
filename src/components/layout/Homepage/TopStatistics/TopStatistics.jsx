@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Slider } from "./Slider";
+import { templatesAmount } from "../../../../../db";
 
 const platforms = [
   { id: 1, name: "Figma", imgUrl: "/platform.svg", bgColor: "blue" },
@@ -30,7 +31,7 @@ export const TopStatistics = () => {
                   alt="Folder"
                 />
               </li>
-              <li>25</li>
+              <li>{templatesAmount}</li>
               <li>Unique slides in library</li>
             </ul>
           </div>

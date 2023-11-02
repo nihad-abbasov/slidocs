@@ -119,3 +119,7 @@ export const templates = [
     amountAvailable: 18,
   },
 ];
+
+export const templatesShortList = templates.slice(0, 6);
+
+export const templatesAmount = templates.length;

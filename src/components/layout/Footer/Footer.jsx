@@ -10,10 +10,12 @@ const footerElements = [
 
 export const Footer = () => {
   return (
-    <footer className="footer_unique_container bg-white p-6 rounded-xl">
+    <footer className="footer_unique_container bg-white py-[3em] px-2 rounded-xl">
       <div className="footer_wrapper grid grid-cols-1 md:grid-cols-3 justify-items-center">
         <div className="w-[60%] flex flex-col justify-between items-center md:items-start">
-          <Logo />
+          <Link href="/">
+            <Logo />
+          </Link>
           <p className="font-light text-sm">
             &copy; 2023 <a href="https://www.sliddex.com">sliddex.com</a>
           </p>

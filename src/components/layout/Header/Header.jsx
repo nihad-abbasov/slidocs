@@ -11,7 +11,9 @@ export const Header = () => {
         <div className="header_links w-full md:w-[40%]">
           <ul className="grid grid-cols-2 items-center justify-items-center md:justify-items-start">
             <li className="logo_wrapper mr-[30px] bg-black">
-              <Logo />
+              <Link href="/">
+                <Logo />
+              </Link>
             </li>
             {headerElements.map((el) => {
               return (
@@ -28,7 +30,7 @@ export const Header = () => {
             })}
           </ul>
         </div>
-        <div className="header_actions mt-4 grid grid-cols-2 w-full md:w-auto">
+        <div className="header_actions mt-4 md:mt-0 grid grid-cols-2 w-full md:w-auto">
           <Link
             href="/profile"
             alt="Buy Access"
