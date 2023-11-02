@@ -5,13 +5,13 @@ import { templatesShortList } from "../../../../../db";
 export const Templates = () => {
   return (
     <section>
-      <article className="w-full flex flex-row justify-between items-center mb-[3em]">
-        <h4 className="text-[40px] font-bold">Templastes</h4>
+      <article className="w-full flex flex-col sm:flex-row justify-between items-center mb-[3em]">
+        <h4 className="text-[40px] font-bold mb-[1em] sm:mb-0 ">Templates</h4>
         <Link
           href="/templates"
           // target="_blank"
           // rel="noopener noreferrer"
-          className="bg-black text-white py-2 px-4 md:p-5 rounded-full hover:shadow-2xl transition-shadow duration-300"
+          className="bg-black text-white py-2 px-4 md:p-5 rounded-full hover:shadow-2xl transition-shadow duration-300 whitespace-nowrap overflow-hidden text-ellipsis"
         >
           See all slides
         </Link>
