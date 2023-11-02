@@ -34,8 +34,13 @@ export const Footer = () => {
             })}
           </ul>
         </div>
-        <div className="footer-contact_info bg-[#6b53fd] text-white p-7 rounded-[35px] w-full md:w-[60%]">
-          <div className="footer-contact_info-content flex flex-col justify-around h-full">
+        <div className="footer-contact_info bg-[#6b53fd] text-white p-7 rounded-[35px] w-full md:w-[65%]">
+          <div
+            className="footer-contact_info-content flex flex-col justify-around h-full bg-contain bg-no-repeat bg-right"
+            style={{
+              backgroundImage: "url('/at.png')",
+            }}
+          >
             <p className="flex flex-col items-start font-light">
               <span>Have a question?</span>
               <span>Write to us!</span>

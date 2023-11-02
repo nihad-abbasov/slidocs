@@ -22,6 +22,7 @@ export const Slider = () => {
           <SplideSlide key={slide.id}>
             <div className="slide_wrapper relative">
               <Image
+                priority
                 src={slide.imgUrl}
                 alt={slide.name}
                 width={0}
