@@ -21,10 +21,10 @@ export const Templates = () => {
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {templatesShortList.map((temp) => {
             return (
-              <li className="card cursor-pointer" key={temp.id}>
+              <li className="card cursor-pointer p-0" key={temp.id}>
                 <Link
                   href={`/${temp.id}`}
-                  className="w-full flex flex-col justify-between items-center"
+                  className="w-[90%] mx-auto px-5 py-7 flex flex-col justify-between items-center gap-3"
                 >
                   <Image
                     src={temp.imgUrl}
@@ -32,7 +32,7 @@ export const Templates = () => {
                     width={0}
                     height={0}
                     sizes="100vw"
-                    className="w-full"
+                    className="w-full rounded-[20px]"
                   />
                   <div className="temp_detailes w-full flex flex-row justify-between items-center">
                     <h5>{temp.category}</h5>
