@@ -23,7 +23,7 @@ export const Templates = () => {
             return (
               <li className="card cursor-pointer p-0" key={temp.id}>
                 <Link
-                  href={`/${temp.id}`}
+                  href={`/template-info/${+temp.id}`}
                   className="w-[90%] mx-auto px-5 py-7 flex flex-col justify-between items-center gap-3"
                 >
                   <Image

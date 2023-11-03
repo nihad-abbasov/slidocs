@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
-import Image from "next/image";
-import { templates } from "../../db";
+import { TemplateCard } from './TemplateCard';
+import { templates } from '../../../../db';
 
 const ITEMS_PER_PAGE = 6;
 
@@ -40,27 +39,7 @@ export const TemplatesPage = () => {
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {visibleItems.map((temp) => {
             return (
-              <li className="card cursor-pointer" key={temp.id}>
-                <Link
-                  href={`/${temp.id}`}
-                  className="w-[90%] mx-auto px-5 py-7 flex flex-col justify-between items-center gap-3"
-                >
-                  <Image
-                    src={temp.imgUrl}
-                    alt={temp.name}
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    className="w-full rounded-[20px]"
-                  />
-                  <div className="temp_detailes w-full flex flex-row justify-between items-center">
-                    <h5>{temp.category}</h5>
-                    <span className="temp_amount bg-black text-white py-2 px-4 rounded-full">
-                      {temp.amountAvailable} Slides
-                    </span>
-                  </div>
-                </Link>
-              </li>
+              <TemplateCard key={temp.id} template={temp} />
             );
           })}
         </ul>
