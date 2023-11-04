@@ -10,9 +10,9 @@ export const Homepage = () => {
     <>
       <TopStatistics />
       <Templates />
+      <Standouts />
       {/*
       <Informational />
-      <Standouts />
       <AccessLinks />
       <OurFeatures /> */}
     </>

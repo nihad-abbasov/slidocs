@@ -18,7 +18,7 @@ export const Templates = () => {
       </article>
 
       <article>
-        <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
+        <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
           {templatesShortList.map((temp) => {
             return (
               <li className="card cursor-pointer p-0" key={temp.id}>
@@ -36,7 +36,7 @@ export const Templates = () => {
                   />
                   <div className="temp_detailes w-full flex flex-row justify-between items-center">
                     <h5>{temp.category}</h5>
-                    <span className="temp_amount bg-black text-white py-2 px-4 rounded-full">
+                    <span className="temp_amount bg-black text-white py-2 px-4 rounded-full whitespace-nowrap overflow-hidden text-ellipsis">
                       {temp.amountAvailable} Slides
                     </span>
                   </div>

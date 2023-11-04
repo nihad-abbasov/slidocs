@@ -684,3 +684,27 @@ export const slides = [
     text: "Milan pirlo Ibrahimovic maldini cafu zidane",
   },
 ];
+
+
+// Standouts
+export const standouts = [
+  {
+    id: 1,
+    iconPath: "/standoutIcons/star.svg",
+    name: "Up-to-date design",
+    description:
+      "We're following the design trends. The slides are never getting older",
+  },
+  {
+    id: 2,
+    iconPath: "/standoutIcons/target.svg",
+    name: "Clear documentation",
+    description: "Laconic user guide will help you to start without troubles",
+  },
+  {
+    id: 3,
+    iconPath: "/standoutIcons/likeable.svg",
+    name: "Good mood",
+    description: "Just relax and collect your presentations without worries",
+  },
+];

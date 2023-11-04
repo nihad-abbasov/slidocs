@@ -20,12 +20,15 @@ export const Footer = () => {
             &copy; 2023 <a href="https://www.sliddex.com">sliddex.com</a>
           </p>
         </div>
-        <div className="flex flex-col justify-evenly w-[100%]">
-          <h6 className="w-full mb-2 font-bold">Navigation</h6>
-          <ul className="flex flex-col w-full justify-between">
+        <div className="flex flex-col justify-evenly w-[100%] my-[2em]">
+          <h6 className="w-full mb-2 font-bold text-center md:text-left">Navigation</h6>
+          <ul className="flex flex-col w-full justify-between items-center md:items-start">
             {footerElements.map((el) => {
               return (
-                <li key={el.id} className="w-[40%] font-light mb-1">
+                <li
+                  key={el.id}
+                  className="w-[40%] font-light mb-1 text-center md:text-left"
+                >
                   <Link className="hover:underline" href={el.url}>
                     {el.name}
                   </Link>
