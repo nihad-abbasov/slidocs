@@ -10,7 +10,7 @@ export const Standouts = () => {
         </h2>
         <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:h-[250px]">
           {standouts.map((st) => {
-            return <StandoutCard standout={st} />;
+            return <StandoutCard key={st.id} standout={st} />;
           })}
         </ul>
       </article>

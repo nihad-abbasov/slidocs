@@ -2,6 +2,21 @@ import Image from "next/image";
 import { Slider } from "./Slider";
 import { templatesAmount } from "../../../../../db";
 
+const smallCards = [
+  {
+    id: 1,
+    iconPath: "/folder.svg",
+    number: templatesAmount,
+    text: "Unique slides in library",
+  },
+  {
+    id: 2,
+    iconPath: "/categories.svg",
+    number: 6,
+    text: "Slide categories",
+  },
+];
+
 const platforms = [
   { id: 1, name: "Figma", imgUrl: "/platform.svg", bgColor: "blue" },
   { id: 2, name: "Sketch", imgUrl: "/platform.svg", bgColor: "lightgray" },
@@ -16,41 +31,33 @@ export const TopStatistics = () => {
       </article>
 
       <article className="stat_right w-full md:w-[45%] grid grid-cols-1 gap-4 justify-content-between">
-        {/* flex flex-col items-center  */}
         <div className="stat_right_top w-full grid grid-cols-2 gap-4">
-          {/* flex flex-row items-center justify-between */}
-          <div className="card">
-            <ul className="py-[2em] px-[1em]">
-              <li>
-                <Image
-                  src="/folder.svg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-[50%] h-auto"
-                  alt="Folder"
-                />
-              </li>
-              <li>{templatesAmount}</li>
-              <li>Unique slides in library</li>
-            </ul>
-          </div>
-          <div className="card">
-            <ul className="py-[2em] px-[1em]">
-              <li>
-                <Image
-                  src="/categories.svg"
-                  width={0}
-                  height={0}
-                  sizes="100vw"
-                  className="w-[50%] h-auto"
-                  alt="Categories"
-                />
-              </li>
-              <li>6</li>
-              <li>Slide categories</li>
-            </ul>
-          </div>
+          {smallCards.map((card) => {
+            return (
+              <div key={card.id} className="card min-h-[230px]">
+                <ul className="py-[2em] px-[1em] flex flex-col items-start justify-between h-full">
+                  <li>
+                    <Image
+                      src={card.iconPath}
+                      width={0}
+                      height={0}
+                      sizes="100vw"
+                      className="w-full h-full"
+                      alt="Folder"
+                    />
+                  </li>
+                  <li className="flex flex-col items-start">
+                    <span className="font-semibold text-4xl">
+                      {card.number}
+                    </span>
+                    <span className="text-[#686868] text-base">
+                      {card.text}
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            );
+          })}
         </div>
         <div className="stat_right_bottom w-full">
           <div className="card flex flex-row justify-between items-center !p-[2em] md:!py-[4em] md:!px-[2em]">

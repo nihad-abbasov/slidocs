@@ -2,121 +2,121 @@
 export const templates = [
   {
     id: 1,
-    name: "Services",
+    name: "Services1",
     imgUrl: "/templates/temp1.webp",
-    category: "Services",
+    category: "Category1",
     amountAvailable: 15,
   },
   {
     id: 2,
     name: "Services2",
     imgUrl: "/templates/temp2.webp",
-    category: "Services2",
+    category: "Category2",
     amountAvailable: 20,
   },
   {
     id: 3,
     name: "Services3",
     imgUrl: "/templates/temp3.webp",
-    category: "Services3",
+    category: "Category3",
     amountAvailable: 10,
   },
   {
     id: 4,
     name: "Services4",
     imgUrl: "/templates/temp4.webp",
-    category: "Services4",
+    category: "Category4",
     amountAvailable: 20,
   },
   {
     id: 5,
     name: "Services5",
     imgUrl: "/templates/temp5.webp",
-    category: "Services5",
+    category: "Category5",
     amountAvailable: 15,
   },
   {
     id: 6,
     name: "Services6",
     imgUrl: "/templates/temp6.webp",
-    category: "Services6",
+    category: "Category6",
     amountAvailable: 18,
   },
   {
     id: 7,
-    name: "Services",
+    name: "Service7",
     imgUrl: "/templates/temp1.webp",
-    category: "Services",
+    category: "Category7",
     amountAvailable: 15,
   },
   {
     id: 8,
-    name: "Services2",
+    name: "Services8",
     imgUrl: "/templates/temp2.webp",
-    category: "Services2",
+    category: "Category8",
     amountAvailable: 20,
   },
   {
     id: 9,
-    name: "Services3",
+    name: "Services9",
     imgUrl: "/templates/temp3.webp",
-    category: "Services3",
+    category: "Category9",
     amountAvailable: 10,
   },
   {
     id: 10,
-    name: "Services4",
+    name: "Services10",
     imgUrl: "/templates/temp4.webp",
-    category: "Services4",
+    category: "Category10",
     amountAvailable: 20,
   },
   {
     id: 11,
-    name: "Services5",
+    name: "Services11",
     imgUrl: "/templates/temp5.webp",
-    category: "Services5",
+    category: "Category11",
     amountAvailable: 15,
   },
   {
     id: 12,
-    name: "Services6",
+    name: "Services12",
     imgUrl: "/templates/temp6.webp",
-    category: "Services6",
+    category: "Category12",
     amountAvailable: 18,
   },
   {
     id: 13,
-    name: "Services2",
-    imgUrl: "/templates/temp2.webp",
-    category: "Services2",
+    name: "Services13",
+    imgUrl: "/templates/temp1.webp",
+    category: "Category13",
     amountAvailable: 20,
   },
   {
     id: 14,
-    name: "Services3",
-    imgUrl: "/templates/temp3.webp",
-    category: "Services3",
+    name: "Services14",
+    imgUrl: "/templates/temp2.webp",
+    category: "Category14",
     amountAvailable: 10,
   },
   {
     id: 15,
-    name: "Services4",
-    imgUrl: "/templates/temp4.webp",
-    category: "Services4",
+    name: "Services15",
+    imgUrl: "/templates/temp3.webp",
+    category: "Category15",
     amountAvailable: 20,
   },
   {
     id: 16,
-    name: "Services5",
-    imgUrl: "/templates/temp5.webp",
-    category: "Services5",
+    name: "Services16",
+    imgUrl: "/templates/temp4.webp",
+    category: "Category16",
     amountAvailable: 15,
   },
   {
     id: 17,
-    name: "Services6",
-    imgUrl: "/templates/temp6.webp",
-    category: "Services6",
+    name: "Services17",
+    imgUrl: "/templates/temp5.webp",
+    category: "Category17",
     amountAvailable: 18,
   },
 ];
@@ -128,9 +128,9 @@ export const templatesAmount = templates.length;
 export const templateDetails = [
   {
     id: 1,
-    name: "Services",
+    name: "Services1",
     imgUrl: "/templates/temp1.webp",
-    category: "Services",
+    category: "Services1",
     amountAvailable: 15,
     description:
       "A comprehensive suite of service templates designed to help you efficiently manage and deliver your business offerings.",
@@ -156,9 +156,9 @@ export const templateDetails = [
   },
   {
     id: 2,
-    name: "E-commerce",
+    name: "Services2",
     imgUrl: "/templates/temp2.webp",
-    category: "Retail",
+    category: "Category2",
     amountAvailable: 20,
     description:
       "Boost your online store with these cutting-edge e-commerce templates.",
@@ -186,9 +186,9 @@ export const templateDetails = [
   // Third product entry with varied details.
   {
     id: 3,
-    name: "Portfolio",
+    name: "Services3",
     imgUrl: "/templates/temp3.webp",
-    category: "Personal",
+    category: "Category3",
     amountAvailable: 10,
     description: "Showcase your work with these stunning portfolio templates.",
     features: [
@@ -215,9 +215,9 @@ export const templateDetails = [
   // Fourth product entry with varied details.
   {
     id: 4,
-    name: "Corporate",
+    name: "Services4",
     imgUrl: "/templates/temp4.webp",
-    category: "Business",
+    category: "Category4",
     amountAvailable: 25,
     description: "Professional templates tailored for corporate websites.",
     features: [
@@ -243,9 +243,9 @@ export const templateDetails = [
   // Fifth product entry with varied details.
   {
     id: 5,
-    name: "Blog",
-    imgUrl: "/templates/temp1.webp",
-    category: "Media",
+    name: "Services5",
+    imgUrl: "/templates/temp5.webp",
+    category: "Category5",
     amountAvailable: 30,
     description: "Engage your audience with these versatile blog templates.",
     features: [
@@ -270,9 +270,9 @@ export const templateDetails = [
   },
   {
     id: 6,
-    name: "Restaurant",
-    imgUrl: "/templates/temp2.webp",
-    category: "Hospitality",
+    name: "Services6",
+    imgUrl: "/templates/temp6.webp",
+    category: "Category6",
     amountAvailable: 12,
     description:
       "Delicious designs to give your restaurant the perfect online presence.",
@@ -300,9 +300,9 @@ export const templateDetails = [
   },
   {
     id: 7,
-    name: "Fitness",
-    imgUrl: "/templates/temp3.webp",
-    category: "Health & Wellness",
+    name: "Services7",
+    imgUrl: "/templates/temp1.webp",
+    category: "Category7",
     amountAvailable: 18,
     description: "Get moving with these dynamic fitness website templates.",
     features: [
@@ -328,9 +328,9 @@ export const templateDetails = [
   },
   {
     id: 8,
-    name: "Event Planning",
-    imgUrl: "/templates/temp4.webp",
-    category: "Event Management",
+    name: "Services8",
+    imgUrl: "/templates/temp2.webp",
+    category: "Category8",
     amountAvailable: 7,
     description: "Plan and publish your events with these dedicated templates.",
     features: [
@@ -357,9 +357,9 @@ export const templateDetails = [
   },
   {
     id: 9,
-    name: "Fashion",
-    imgUrl: "/templates/temp1.webp",
-    category: "Retail",
+    name: "Services9",
+    imgUrl: "/templates/temp3.webp",
+    category: "Category9",
     amountAvailable: 22,
     description:
       "Chic and trendy templates perfect for fashion bloggers and retailers.",
@@ -386,9 +386,9 @@ export const templateDetails = [
   },
   {
     id: 10,
-    name: "Education",
-    imgUrl: "/templates/temp2.webp",
-    category: "Educational",
+    name: "Services10",
+    imgUrl: "/templates/temp4.webp",
+    category: "Category10",
     amountAvailable: 9,
     description:
       "Learn and teach with these educational templates designed for institutions and tutors.",
@@ -416,9 +416,9 @@ export const templateDetails = [
   },
   {
     id: 11,
-    name: "Non-Profit",
-    imgUrl: "/templates/temp3.webp",
-    category: "Charity",
+    name: "Services11",
+    imgUrl: "/templates/temp5.webp",
+    category: "Category11",
     amountAvailable: 14,
     description:
       "Empower your charity with templates that resonate with your cause.",
@@ -446,9 +446,9 @@ export const templateDetails = [
   },
   {
     id: 12,
-    name: "Photography",
-    imgUrl: "/templates/temp4.webp",
-    category: "Creative Arts",
+    name: "Services12",
+    imgUrl: "/templates/temp6.webp",
+    category: "Category12",
     amountAvailable: 16,
     description:
       "Showcase your photography skills with templates designed to impress.",
@@ -475,9 +475,9 @@ export const templateDetails = [
   },
   {
     id: 13,
-    name: "Technology",
+    name: "Services13",
     imgUrl: "/templates/temp1.webp",
-    category: "Tech Industry",
+    category: "Category13",
     amountAvailable: 20,
     description: "Futuristic templates that make your tech business stand out.",
     features: [
@@ -502,9 +502,9 @@ export const templateDetails = [
   },
   {
     id: 14,
-    name: "Real Estate",
+    name: "Services14",
     imgUrl: "/templates/temp2.webp",
-    category: "Real Estate",
+    category: "Category14",
     amountAvailable: 8,
     description:
       "High-quality templates designed for real estate listings and brokerages.",
@@ -527,9 +527,9 @@ export const templateDetails = [
   },
   {
     id: 15,
-    name: "Personal Branding",
+    name: "Services15",
     imgUrl: "/templates/temp3.webp",
-    category: "Professional",
+    category: "Category15",
     amountAvailable: 11,
     description:
       "Craft your online identity with these personal branding templates.",
@@ -557,9 +557,9 @@ export const templateDetails = [
   },
   {
     id: 16,
-    name: "Gaming",
+    name: "Services16",
     imgUrl: "/templates/temp4.webp",
-    category: "Entertainment",
+    category: "Category16",
     amountAvailable: 13,
     description:
       "Dynamic and engaging templates perfect for gaming communities and streamers.",
@@ -586,9 +586,9 @@ export const templateDetails = [
   },
   {
     id: 17,
-    name: "Travel",
-    imgUrl: "/templates/temp1.webp",
-    category: "Tourism",
+    name: "Services17",
+    imgUrl: "/templates/temp5.webp",
+    category: "Category17",
     amountAvailable: 10,
     description:
       "Explore the world with these travel templates, ideal for bloggers and agencies.",
@@ -614,38 +614,7 @@ export const templateDetails = [
   },
 ];
 
-// export const templateDetails = [
-//   {
-//     id: 1,
-//     name: "Services",
-//     imgUrl: "/templates/temp1.webp",
-//     category: "Services",
-//     amountAvailable: 15,
-//     description:
-//       "A comprehensive suite of service templates designed to help you efficiently manage and deliver your business offerings.",
-//     features: [
-//       "Fully customizable layouts",
-//       "Integration with leading service management tools",
-//       "Responsive design for mobile and desktop",
-//     ],
-//     price: 49.99,
-//     reviews: [
-//       {
-//         user: "John Doe",
-//         rating: 5,
-//         comment: "These templates saved me a ton of time and effort!",
-//       },
-//       {
-//         user: "Jane Smith",
-//         rating: 4,
-//         comment: "Very professional designs and easy to use.",
-//       },
-//     ],
-//     relatedTemplates: [2, 3, 4],
-//   },
-// ];
 
-// top slides
 export const slides = [
   {
     id: 1,

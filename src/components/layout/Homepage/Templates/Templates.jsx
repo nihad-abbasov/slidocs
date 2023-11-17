@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { templatesShortList } from "../../../../../db";
+import { IoIosArrowForward } from "react-icons/io";
 
 export const Templates = () => {
   return (
@@ -11,9 +12,10 @@ export const Templates = () => {
           href="/templates"
           // target="_blank"
           // rel="noopener noreferrer"
-          className="bg-black text-white py-2 px-4 md:p-5 rounded-full hover:shadow-2xl transition-shadow duration-300 whitespace-nowrap overflow-hidden text-ellipsis"
+          className="bg-black text-white py-2 px-4 md:p-5 rounded-full hover:shadow-2xl transition-shadow duration-300 whitespace-nowrap overflow-hidden text-ellipsis flex flex-row items-center justify-between"
         >
-          See all slides
+          <IoIosArrowForward className="bg-white fill-black p-4 rounded-full mr-3 w-full h-full" />
+          <span>See all slides</span>
         </Link>
       </article>
 
