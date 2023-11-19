@@ -614,7 +614,6 @@ export const templateDetails = [
   },
 ];
 
-
 export const slides = [
   {
     id: 1,
@@ -654,7 +653,6 @@ export const slides = [
   },
 ];
 
-
 // Standouts
 export const standouts = [
   {
@@ -675,5 +673,27 @@ export const standouts = [
     iconPath: "/standoutIcons/likeable.svg",
     name: "Good mood",
     description: "Just relax and collect your presentations without worries",
+  },
+];
+
+// Features
+export const features = [
+  {
+    id: 1,
+    name: "Title 1",
+    content:
+      "Explore the library, find the perfect slides and collect your deck faster and easier",
+  },
+  {
+    id: 2,
+    name: "Title 2",
+    content:
+      "Explore the library, find the perfect slides and collect your deck faster and easier",
+  },
+  {
+    id: 3,
+    name: "Title 3",
+    content:
+      "Explore the library, find the perfect slides and collect your deck faster and easier",
   },
 ];

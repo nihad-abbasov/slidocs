@@ -12,9 +12,8 @@ export const Homepage = () => {
       <Templates />
       <Informational />
       <Standouts />
-      {/*
       <AccessLinks />
-      <OurFeatures /> */}
+      <OurFeatures />
     </>
   );
 };

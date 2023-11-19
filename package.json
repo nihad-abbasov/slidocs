@@ -9,12 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/fiber": "^8.15.11",
     "@splidejs/react-splide": "^0.7.12",
     "eslint-config-next": "^14.0.1",
+    "framer-motion-3d": "^10.16.5",
     "next": "^14.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0"
+    "react-icons": "^4.12.0",
+    "three": "^0.158.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",

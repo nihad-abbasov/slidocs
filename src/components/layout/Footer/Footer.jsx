@@ -17,11 +17,13 @@ export const Footer = () => {
             <Logo />
           </Link>
           <p className="font-light text-sm">
-            &copy; 2023 <a href="https://www.sliddex.com">sliddex.com</a>
+            &copy; 2023 <a href="https://www.slidocs.com">slidocs.com</a>
           </p>
         </div>
         <div className="flex flex-col justify-evenly w-[100%] my-[2em]">
-          <h6 className="w-full mb-2 font-bold text-center md:text-left">Navigation</h6>
+          <h6 className="w-full mb-2 font-bold text-center md:text-left">
+            Navigation
+          </h6>
           <ul className="flex flex-col w-full justify-between items-center md:items-start">
             {footerElements.map((el) => {
               return (
@@ -49,10 +51,10 @@ export const Footer = () => {
               <span>Write to us!</span>
             </p>
             <a
-              href="mailto:hello@sliddex.com"
+              href="mailto:hello@slidocs.com"
               className="font-semibold hover:underline"
             >
-              hello@sliddex.com
+              hello@slidocs.com
             </a>
           </div>
         </div>
