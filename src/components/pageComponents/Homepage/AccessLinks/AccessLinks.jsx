@@ -22,7 +22,8 @@ export const AccessLinks = () => {
       </article>
       <article className="grid grid-cols-1 gap-4 w-[90%]">
         <Link
-          href="/download"
+          // href="/download"
+          href="/buy-access"
           className="card w-full flex flex-row items-center justify-between !px-[10%] lg:!px-[10%]"
         >
           <div className="card_content">
