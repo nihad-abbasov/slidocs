@@ -1,7 +1,7 @@
 import { StandoutCard } from "./StandoutCard";
 import { standouts } from "../../../../../db";
 
-export const Standouts = () => {
+export const StandoutsSection = () => {
   return (
     <section>
       <article>

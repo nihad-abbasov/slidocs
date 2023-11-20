@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { TemplateCard } from './TemplateCard';
-import { templates } from '../../../../db';
+import { TemplateCard } from "./TemplateCard";
+import { templates } from "../../../../db";
 
 const ITEMS_PER_PAGE = 6;
 
@@ -33,14 +33,12 @@ export const TemplatesPage = () => {
   };
 
   return (
-    <div className="container !my-[4em]">
+    <section className="">
       <h1 className="text-[40px] font-bold mb-[1em]">Templates Page</h1>
       <article>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
           {visibleItems.map((temp) => {
-            return (
-              <TemplateCard key={temp.id} template={temp} />
-            );
+            return <TemplateCard key={temp.id} template={temp} />;
           })}
         </ul>
         {/* "See More" Button */}
@@ -53,6 +51,6 @@ export const TemplatesPage = () => {
           </button>
         </div>
       </article>
-    </div>
+    </section>
   );
 };

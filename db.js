@@ -1,3 +1,6 @@
+// header links
+export const headerElements = [{ id: 1, name: "Pricing", url: "/pricing" }];
+
 // templates
 export const templates = [
   {
@@ -653,6 +656,27 @@ export const slides = [
   },
 ];
 
+export const smallCards = [
+  {
+    id: 1,
+    iconPath: "/folder.svg",
+    number: templatesAmount,
+    text: "Unique slides in library",
+  },
+  {
+    id: 2,
+    iconPath: "/categories.svg",
+    number: 6,
+    text: "Slide categories",
+  },
+];
+
+export const platforms = [
+  { id: 1, name: "Figma", imgUrl: "/platform.svg", bgColor: "blue" },
+  { id: 2, name: "Sketch", imgUrl: "/platform.svg", bgColor: "lightgray" },
+  { id: 3, name: "AdobeXD", imgUrl: "/platform.svg", bgColor: "lightgray" },
+];
+
 // Standouts
 export const standouts = [
   {
@@ -696,4 +720,56 @@ export const features = [
     content:
       "Explore the library, find the perfect slides and collect your deck faster and easier",
   },
+];
+
+// Text Routes' Contents
+export const textRoutes = [
+  {
+    id: 1,
+    url: "/about",
+    pageTitle: "About",
+    pageContent: [
+      "Welcome to our About page. Here, you can learn more about our mission and values. Our organization is committed to excellence and innovation in our field. We believe in creating value for our stakeholders and making a positive impact on society.",
+      "Our team is dedicated to providing the best service to our clients. Each member brings unique skills and experiences to the table. Together, we work towards achieving outstanding results and exceeding expectations. We are passionate about what we do and always strive for excellence.",
+      "Discover our history and what drives us forward. We started as a small company with big dreams, and over the years, we have grown significantly. Our journey is a testament to hard work, dedication, and a strong vision. We are excited about the future and the opportunities it holds.",
+    ],
+  },
+  {
+    id: 2,
+    url: "/privacy",
+    pageTitle: "Privacy",
+    pageContent: [
+      "Your privacy is of utmost importance to us. We are committed to protecting your personal information and ensuring its confidentiality. Our privacy policy has been designed to inform you about how we collect, use, and safeguard your data. We adhere to the highest standards of data protection.",
+      "This page outlines our privacy policy and how we handle your data. We are transparent about our data practices and believe in open communication with our users. You have the right to know how your information is being used and what measures we take to protect it.",
+      "Learn about your rights and our commitment to protecting your information. We empower you to control your personal data and provide options to manage your privacy preferences. Our team is dedicated to upholding your privacy rights and responding to any concerns you may have.",
+    ],
+  },
+  {
+    id: 3,
+    url: "/terms",
+    pageTitle: "Terms",
+    pageContent: [
+      "These are the terms and conditions for using our service. By accessing and using our platform, you agree to these terms. It's important that you understand them. Violation of any terms may result in termination of your access to our services.",
+      "Please read these terms carefully before using our platform. They include crucial information about your legal rights and obligations. If you have any questions or concerns about these terms, feel free to contact us.",
+      "Understanding these terms is crucial for a smooth experience. They are designed to ensure a fair and safe environment for all users. We regularly update these terms to reflect any changes in our services or legal requirements.",
+    ],
+  },
+  {
+    id: 4,
+    url: "/refund",
+    pageTitle: "Refund",
+    pageContent: [
+      "We offer a transparent refund policy. Our aim is to make the process as straightforward and fair as possible. If you're not satisfied with our service, you may be eligible for a refund. Please review the following terms to understand our refund process.",
+            "Find out how you can request a refund and the terms associated with it. We have a dedicated support team to assist you with refund queries. The eligibility for a refund depends on various factors, including the type of product or service purchased.",
+            "Your satisfaction is important, and we ensure a fair refund process. We believe in building trust with our customers through transparent and customer-friendly policies. If you have any questions about refunds, don't hesitate to reach out to our support team."
+    ],
+  },
+];
+
+// footer links
+export const footerElements = [
+  { id: 1, name: "About Us", url: "/about" },
+  { id: 2, name: "Terms & Conditions", url: "/terms" },
+  { id: 3, name: "Privacy Policy", url: "/privacy" },
+  { id: 4, name: "Refund", url: "/refund" },
 ];

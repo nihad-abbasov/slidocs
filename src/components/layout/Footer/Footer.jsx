@@ -1,12 +1,7 @@
 import { Logo } from "../../reusable/Logo";
 import Link from "next/link";
-
-const footerElements = [
-  { id: 1, name: "About Us", url: "/about" },
-  { id: 2, name: "Terms & Conditions", url: "/terms" },
-  { id: 3, name: "Privacy Policy", url: "/privacy" },
-  { id: 4, name: "Refund", url: "/refund" },
-];
+import { footerElements } from "../../../../db";
+import { FooterElement } from "./FooterElement";
 
 export const Footer = () => {
   return (
@@ -26,16 +21,7 @@ export const Footer = () => {
           </h6>
           <ul className="flex flex-col w-full justify-between items-center md:items-start">
             {footerElements.map((el) => {
-              return (
-                <li
-                  key={el.id}
-                  className="w-[40%] font-light mb-1 text-center md:text-left"
-                >
-                  <Link className="hover:underline" href={el.url}>
-                    {el.name}
-                  </Link>
-                </li>
-              );
+              return <FooterElement key={el.id} element={el} />;
             })}
           </ul>
         </div>

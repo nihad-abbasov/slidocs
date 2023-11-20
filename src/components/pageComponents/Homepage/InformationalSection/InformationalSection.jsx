@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const Informational = () => {
+export const InformationalSection = () => {
   return (
     <section className="grid grid-cols-1 md:grid-cols-2">
       <article className="card min-h-[400px] w-[85%]">

@@ -1,10 +1,12 @@
 import { features } from "../../../../../db";
 
-export const OurFeatures = () => {
+export const OurFeaturesSection = () => {
   return (
     <section className="flex flex-col items-center justify-between !mt-[10%]">
-      <h6 className="mb-[15px] text-2xl font-bold">Ready to Level Up?</h6>
-      <p className="mb-[6%] font-extralight">
+      <h6 className="mb-[15px] text-2xl font-bold text-center">
+        Ready to Level Up?
+      </h6>
+      <p className="mb-[6%] font-extralight text-center">
         Explore the library, find the perfect slides and collect your deck
         faster and easier
       </p>
@@ -19,7 +21,7 @@ export const OurFeatures = () => {
               <div className="feature_icon bg-[url('/check.png')] bg-contain bg-no-repeat bg-center w-[50px] h-[50px] mt-[5px]"></div>
               <div className="feature_info">
                 <h6 className="text-lg font-bold mb-[10px]">{feature.name}</h6>
-                <p className="text-sm font-extralight w-[55%] text-justify">
+                <p className="text-sm font-extralight w-[60%] text-justify">
                   {feature.content}
                 </p>
               </div>

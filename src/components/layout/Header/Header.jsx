@@ -1,8 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Logo } from "../../reusable/Logo";
-
-const headerElements = [{ id: 1, name: "Pricing", url: "/pricing" }];
+import { headerElements } from "../../../../db";
+import { HeaderElement } from "./HeaderElement";
 
 export const Header = () => {
   return (
@@ -16,21 +16,11 @@ export const Header = () => {
               </Link>
             </li>
             {headerElements.map((el) => {
-              return (
-                <li key={el.id} className="mr-[10px] last:mr-0 block w-max">
-                  <Link
-                    href={el.url}
-                    alt={el.name}
-                    className="py-[12px] px-[25px] rounded-full bg-white text-black hover:bg-blue-500 hover:text-white hover:scale-90 transition duration-300"
-                  >
-                    {el.name}
-                  </Link>
-                </li>
-              );
+              return <HeaderElement key={el.id} element={el} />;
             })}
           </ul>
         </div>
-        <div className="header_actions mt-4 md:mt-0 grid grid-cols-2 w-full md:w-auto">
+        <div className="header_actions mt-4 md:mt-0 grid grid-cols-4 w-full md:w-auto">
           <Link
             href="/profile"
             alt="Buy Access"
@@ -44,6 +34,20 @@ export const Header = () => {
             className="py-[12px] px-[25px] rounded-full bg-[#6B53FD] text-white text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
           >
             Buy Access
+          </Link>
+          <Link
+            href="/login"
+            alt="Login"
+            className="py-[12px] px-[25px] mr-3 rounded-full bg-white text-black text-center hover:bg-gray-200 hover:scale-90 transition duration-300"
+          >
+            Login
+          </Link>
+          <Link
+            href="/sign_up"
+            alt="Sign Up"
+            className="py-[12px] px-[25px] rounded-full bg-[#6B53FD] text-white text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
+          >
+            Sign Up
           </Link>
         </div>
       </div>

@@ -1,29 +1,8 @@
 import Image from "next/image";
 import { Slider } from "./Slider";
-import { templatesAmount } from "../../../../../db";
+import { smallCards, platforms } from "../../../../../db";
 
-const smallCards = [
-  {
-    id: 1,
-    iconPath: "/folder.svg",
-    number: templatesAmount,
-    text: "Unique slides in library",
-  },
-  {
-    id: 2,
-    iconPath: "/categories.svg",
-    number: 6,
-    text: "Slide categories",
-  },
-];
-
-const platforms = [
-  { id: 1, name: "Figma", imgUrl: "/platform.svg", bgColor: "blue" },
-  { id: 2, name: "Sketch", imgUrl: "/platform.svg", bgColor: "lightgray" },
-  { id: 3, name: "AdobeXD", imgUrl: "/platform.svg", bgColor: "lightgray" },
-];
-
-export const TopStatistics = () => {
+export const TopStatisticsSection = () => {
   return (
     <section className="flex flex-col md:flex-row items-center justify-between">
       <article className="stat_left w-full md:w-[50%] mb-[1em] md:mb-0">
@@ -50,7 +29,7 @@ export const TopStatistics = () => {
                     <span className="font-semibold text-4xl">
                       {card.number}
                     </span>
-                    <span className="text-[#686868] text-base">
+                    <span className="text-[#686868] text-sm">
                       {card.text}
                     </span>
                   </li>

@@ -1,19 +1,19 @@
-import { TopStatistics } from "./TopStatistics/TopStatistics";
-import { Templates } from "./Templates/Templates";
-import { Standouts } from "./Standouts/Standouts";
-import { AccessLinks } from "./AccessLinks/AccessLinks";
-import { Informational } from "./Informational/Informational";
-import { OurFeatures } from "./OurFeatures/OurFeatures";
+import { TopStatisticsSection } from "./TopStatisticsSection/TopStatisticsSection";
+import { TemplatesSection } from "./TemplatesSection/TemplatesSection";
+import { StandoutsSection } from "./StandoutsSection/StandoutsSection";
+import { AccessLinksSection } from "./AccessLinksSection/AccessLinksSection";
+import { InformationalSection } from "./InformationalSection/InformationalSection";
+import { OurFeaturesSection } from "./OurFeaturesSection/OurFeaturesSection";
 
 export const Homepage = () => {
   return (
     <>
-      <TopStatistics />
-      <Templates />
-      <Informational />
-      <Standouts />
-      <AccessLinks />
-      <OurFeatures />
+      <TopStatisticsSection />
+      <TemplatesSection />
+      <InformationalSection />
+      <StandoutsSection />
+      <AccessLinksSection />
+      <OurFeaturesSection />
     </>
   );
 };

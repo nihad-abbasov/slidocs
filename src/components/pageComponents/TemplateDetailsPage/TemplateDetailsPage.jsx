@@ -1,13 +1,17 @@
 import { templateDetails } from "../../../../db";
+import Image from "next/image";
 
 export const TemplateDetailsPage = ({ template }) => {
   return (
-    <main className="container mx-auto p-4">
+    <section className="mx-auto p-4">
       {/* <h1 className="text-3xl font-bold text-gray-800 mb-2">{template.name}</h1> */}
-      <img
-        className="w-full sm:w-1/2 lg:w-1/3 rounded shadow-md mb-4"
+      <Image
+        className="w-full h-full sm:w-1/2 lg:w-1/3 rounded shadow-md mb-4"
         src={template.imgUrl}
         alt={template.name}
+        width={0}
+        height={0}
+        sizes="100vw"
       />
       <p className="text-sm text-gray-600">Category: {template.category}</p>
       <p className="my-4">{template.description}</p>
@@ -49,6 +53,6 @@ export const TemplateDetailsPage = ({ template }) => {
           </li>
         ))}
       </ul>
-    </main>
+    </section>
   );
 };
