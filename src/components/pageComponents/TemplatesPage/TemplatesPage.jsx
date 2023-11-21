@@ -33,7 +33,7 @@ export const TemplatesPage = () => {
   };
 
   return (
-    <section className="">
+    <section className="willFadeIn">
       <h1 className="text-[40px] font-bold mb-[1em]">Templates Page</h1>
       <article>
         <ul className="grid grid-cols-1 md:grid-cols-3 gap-7">
@@ -41,7 +41,6 @@ export const TemplatesPage = () => {
             return <TemplateCard key={temp.id} template={temp} />;
           })}
         </ul>
-        {/* "See More" Button */}
         <div className="flex justify-center mt-8">
           <button
             onClick={loadMoreItems}

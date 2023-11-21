@@ -2,7 +2,7 @@ import { features } from "../../../../../db";
 
 export const OurFeaturesSection = () => {
   return (
-    <section className="flex flex-col items-center justify-between !mt-[10%]">
+    <section className="willFadeIn flex flex-col items-center justify-between !mt-[10%]">
       <h6 className="mb-[15px] text-2xl font-bold text-center">
         Ready to Level Up?
       </h6>

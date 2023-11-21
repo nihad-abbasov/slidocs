@@ -7,7 +7,7 @@ import Image from "next/image";
 
 export const AccessLinksSection = () => {
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    <section className="willFadeIn grid grid-cols-1 lg:grid-cols-2 gap-4">
       <article className="">
         <div className="relative w-full h-full">
           <Image
@@ -20,7 +20,7 @@ export const AccessLinksSection = () => {
           />
           <Link
             href="/buy-access"
-            className="text-white w-[60%] bg-black hover:bg-white hover:text-black font-semibold text-2xl text-center transition duration-500 ease-in-out p-8 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hover:scale-110"
+            className="text-white w-[60%] bg-black hover:bg-white hover:text-black font-semibold text-2xl text-center transition duration-300 ease-in-out p-8 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hover:scale-105"
           >
             Get Full Access for $39
           </Link>
@@ -30,7 +30,7 @@ export const AccessLinksSection = () => {
           <AccessButton />
         </div> */}
       </article>
-      <article className="grid grid-cols-1 gap-4 w-[90%]">
+      <article className="grid grid-cols-1 justify-items-end gap-4 w-[90%]">
         <Link
           // href="/download"
           href="/buy-access"

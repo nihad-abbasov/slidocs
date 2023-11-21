@@ -4,7 +4,7 @@ import { smallCards, platforms } from "../../../../../db";
 
 export const TopStatisticsSection = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-between">
+    <section className="willFadeIn flex flex-col md:flex-row items-center justify-between">
       <article className="stat_left w-full md:w-[50%] mb-[1em] md:mb-0">
         <Slider />
       </article>

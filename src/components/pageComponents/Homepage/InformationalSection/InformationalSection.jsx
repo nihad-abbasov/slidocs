@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const InformationalSection = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2">
+    <section className="willFadeIn grid grid-cols-1 md:grid-cols-2">
       <article className="card min-h-[400px] w-[85%]">
         <ul className="py-[2em] px-[1em] flex flex-col items-start justify-between h-full">
           <li>

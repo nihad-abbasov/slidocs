@@ -6,7 +6,7 @@ import { TemplateCard } from "../../TemplatesPage/TemplateCard";
 
 export const TemplatesSection = () => {
   return (
-    <section>
+    <section className="willFadeIn">
       <article className="w-full flex flex-col sm:flex-row justify-between items-center mb-[3em]">
         <h4 className="text-[40px] font-bold mb-[1em] sm:mb-0 ">Templates</h4>
         <Link

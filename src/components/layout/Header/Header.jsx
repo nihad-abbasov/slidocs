@@ -4,6 +4,8 @@ import { Logo } from "../../reusable/Logo";
 import { headerElements } from "../../../../db";
 import { HeaderElement } from "./HeaderElement";
 
+const isAuth = false;
+
 export const Header = () => {
   return (
     <header className="py-[40px]">
@@ -20,35 +22,39 @@ export const Header = () => {
             })}
           </ul>
         </div>
-        <div className="header_actions mt-4 md:mt-0 grid grid-cols-4 w-full md:w-auto">
-          <Link
-            href="/profile"
-            alt="Buy Access"
-            className="py-[12px] px-[25px] mr-3 rounded-full bg-white text-black text-center hover:bg-gray-200 hover:scale-90 transition duration-300"
-          >
-            My Profile
-          </Link>
+        <div className="header_actions mt-4 md:mt-0 flex flex-row items-center justify-between w-full md:w-auto">
           <Link
             href="/buy-access"
             alt="Buy Access"
-            className="py-[12px] px-[25px] rounded-full bg-[#6B53FD] text-white text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
+            className="py-[12px] px-[25px] mr-3 rounded-full bg-[#6B53FD] text-white text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
           >
             Buy Access
           </Link>
-          <Link
-            href="/login"
-            alt="Login"
-            className="py-[12px] px-[25px] mr-3 rounded-full bg-white text-black text-center hover:bg-gray-200 hover:scale-90 transition duration-300"
-          >
-            Login
-          </Link>
-          <Link
-            href="/sign_up"
-            alt="Sign Up"
-            className="py-[12px] px-[25px] rounded-full bg-[#6B53FD] text-white text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
-          >
-            Sign Up
-          </Link>
+          {isAuth && (
+            <Link
+              href="/profile"
+              alt="Buy Access"
+              className="py-[12px] px-[25px] mr-3 rounded-full bg-white text-black text-center hover:bg-gray-200 hover:scale-90 transition duration-300"
+            >
+              My Profile
+            </Link>
+          )}
+          <div className="registerBtns flex flex-row items-center justify-between border border-[0.5px] border-gray-500 py-1 px-3 rounded-full">
+            <Link
+              href="/login"
+              alt="Login"
+              className="py-[12px] px-[25px] mr-2 rounded-full bg-white text-black text-center hover:bg-gray-200 hover:scale-90 transition duration-300"
+            >
+              Login
+            </Link>
+            <Link
+              href="/sign_up"
+              alt="Sign Up"
+              className="py-[12px] px-[25px] rounded-full bg-black text-white text-center inline-block hover:bg-gray-700 hover:scale-90 transition duration-300 "
+            >
+              Sign Up
+            </Link>
+          </div>
         </div>
       </div>
     </header>

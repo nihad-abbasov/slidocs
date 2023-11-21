@@ -760,8 +760,8 @@ export const textRoutes = [
     pageTitle: "Refund",
     pageContent: [
       "We offer a transparent refund policy. Our aim is to make the process as straightforward and fair as possible. If you're not satisfied with our service, you may be eligible for a refund. Please review the following terms to understand our refund process.",
-            "Find out how you can request a refund and the terms associated with it. We have a dedicated support team to assist you with refund queries. The eligibility for a refund depends on various factors, including the type of product or service purchased.",
-            "Your satisfaction is important, and we ensure a fair refund process. We believe in building trust with our customers through transparent and customer-friendly policies. If you have any questions about refunds, don't hesitate to reach out to our support team."
+      "Find out how you can request a refund and the terms associated with it. We have a dedicated support team to assist you with refund queries. The eligibility for a refund depends on various factors, including the type of product or service purchased.",
+      "Your satisfaction is important, and we ensure a fair refund process. We believe in building trust with our customers through transparent and customer-friendly policies. If you have any questions about refunds, don't hesitate to reach out to our support team.",
     ],
   },
 ];

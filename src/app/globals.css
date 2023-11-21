@@ -29,6 +29,11 @@ body {
 /* * {
   animation: 2s fadeIn;
 }
+ */
+
+.willFadeIn {
+  animation: 2s fadeIn;
+}
 
 @keyframes fadeIn {
   0% {
@@ -37,7 +42,7 @@ body {
   100% {
     opacity: 1;
   }
-} */
+}
 
 html,
 body {

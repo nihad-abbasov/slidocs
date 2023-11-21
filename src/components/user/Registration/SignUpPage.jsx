@@ -1,3 +1,12 @@
+import Image from "next/image";
+import { RegisterImageSection } from "./registerComponents/RegisterImageSection";
+import { FormSection } from "./registerComponents/FormSection";
+
 export const SignUpPage = () => {
-  return <section>SignUpPage</section>;
+  return (
+    <section className="signUp willFadeIn grid grid-cols-2 gap-5 justify-items-end">
+      <FormSection isLogin={false} />
+      <RegisterImageSection />
+    </section>
+  );
 };

@@ -1,6 +1,6 @@
 export const ContentLayout = ({ currentRoute }) => {
   return (
-    <section className="card !px-[10%] !py-[5%]">
+    <section className="card willFadeIn !px-[10%] !py-[5%]">
       <header className="content_card">
         <h1 className="contentRoute_title text-3xl font-semibold mb-[1em]">
           {currentRoute.pageTitle}
