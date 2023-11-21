@@ -4,7 +4,7 @@ import { FormSection } from "./registerComponents/FormSection";
 
 export const LoginPage = () => {
   return (
-    <section className="login willFadeIn grid grid-cols-2 gap-5 justify-items-end">
+    <section className="login willFadeIn grid grid-cols-1 lg:grid-cols-2 gap-5 justify-items-end">
       <FormSection isLogin={true} />
       <RegisterImageSection />
     </section>

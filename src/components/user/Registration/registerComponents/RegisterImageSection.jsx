@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const RegisterImageSection = () => {
   return (
-    <Link href="/templates" className="form_image w-[90%]">
+    <Link href="/templates" className="form_image w-full lg:w-[90%]">
       <figure className="card flex flex-col justify-center items-center !py-20 !px-0">
         <Image
           src="/registration-illustration.svg"
