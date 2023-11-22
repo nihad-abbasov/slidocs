@@ -2,8 +2,8 @@ import Image from "next/image";
 
 export const InformationalSection = () => {
   return (
-    <section className="willFadeIn grid grid-cols-1 md:grid-cols-2">
-      <article className="card min-h-[400px] w-[85%]">
+    <section className="willFadeIn grid grid-cols-1 lg:grid-cols-2 gap-[15px]">
+      <article className="card min-h-[400px]">
         <ul className="py-[2em] px-[1em] flex flex-col items-start justify-between h-full">
           <li>
             <Image
@@ -28,7 +28,16 @@ export const InformationalSection = () => {
           </li>
         </ul>
       </article>
-      <article className="bg-[url('/informational-bg.webp')] bg-cover bg-no-repeat bg-center rounded-[35px] w-full"></article>
+      <article className="">
+        <Image
+          src="/informational-bg.webp"
+          alt="Perfect Pitch Deck"
+          className="w-full rounded-[35px]"
+          width={0}
+          height={0}
+          sizes="100vw"
+        />
+      </article>
     </section>
   );
 };

@@ -1,8 +1,16 @@
 import Image from "next/image";
 import { Slider } from "./Slider";
 import { smallCards, platforms } from "../../../../../db";
+import { useLoading } from "../../../../app/_customHooks/useLoading";
+import { Loading } from "../../../layout/Loading/Loading";
 
 export const TopStatisticsSection = () => {
+  const isLoading = useLoading();
+
+  if (isLoading) {
+    return <Loading />;
+  }
+
   return (
     <section className="willFadeIn flex flex-col md:flex-row items-stretch justify-between">
       <article className="stat_left w-full md:w-[57%] mb-[1em] md:mb-0">
