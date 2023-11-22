@@ -18,7 +18,7 @@ export const BurgerMenu = () => {
   return (
     <div className="relative md:hidden">
       <div className="grid grid-cols-2 items-center">
-        <Link href="/">
+        <Link href="/" className="w-[80%]">
           <Logo />
         </Link>
         {/* Burger Icon */}
