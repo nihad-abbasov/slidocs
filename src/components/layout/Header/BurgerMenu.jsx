@@ -102,24 +102,24 @@ export const BurgerMenu = () => {
 
         <ul className="page-links mt-8">
           <li>
-            <a href="/" className="block py-2">
+            <Link href="/" className="block py-2">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/info/about" className="block py-2">
+            <Link href="/info/about" className="block py-2">
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/info/contact" className="block py-2">
+            <Link href="/info/contact" className="block py-2">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/info/refund" className="block py-2">
+            <Link href="/info/refund" className="block py-2">
               Refund
-            </a>
+            </Link>
           </li>
         </ul>
 
