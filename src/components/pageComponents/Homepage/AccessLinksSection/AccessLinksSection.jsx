@@ -20,7 +20,7 @@ export const AccessLinksSection = () => {
           />
           <Link
             href="/buy-access"
-            className="text-white w-[60%] bg-black hover:bg-white hover:text-black font-semibold text-2xl text-center transition duration-300 ease-in-out p-8 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hover:scale-105"
+            className="text-white w-[80%] lg:w-[60%] bg-black hover:bg-white hover:text-black font-semibold text-lg lg:text-2xl text-center transition duration-300 ease-in-out p-4 lg:p-8 rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hover:scale-105"
           >
             Get Full Access for $39
           </Link>
@@ -30,7 +30,7 @@ export const AccessLinksSection = () => {
           <AccessButton />
         </div> */}
       </article>
-      <article className="grid grid-cols-1 justify-items-end gap-4 w-[90%]">
+      <article className="grid grid-cols-1 justify-items-end gap-4 w-[100%] lg:w-[100%]">
         <Link
           // href="/download"
           href="/buy-access"
@@ -38,7 +38,7 @@ export const AccessLinksSection = () => {
         >
           <div className="card_content">
             <h4 className="font-semibold text-xl">Try Demo</h4>
-            <p>Free 10 Slides for Personal Use</p>
+            <p className="text-sm">Free 10 Slides for Personal Use</p>
           </div>
           <div className="card_icon">
             <Image
@@ -47,7 +47,7 @@ export const AccessLinksSection = () => {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="w-[80%] lg:w-full h-full"
             />
           </div>
         </Link>
@@ -66,7 +66,7 @@ export const AccessLinksSection = () => {
               width={0}
               height={0}
               sizes="100vw"
-              className="w-full h-full"
+              className="w-[80%] lg:w-full h-full"
             />
           </div>
         </Link>
