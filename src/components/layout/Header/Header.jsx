@@ -3,13 +3,14 @@ import Link from "next/link";
 import { Logo } from "../../reusable/Logo";
 import { headerElements } from "../../../../db";
 import { HeaderElement } from "./HeaderElement";
+import { BurgerMenu } from "./BurgerMenu";
 
 const isAuth = false;
 
 export const Header = () => {
   return (
-    <header className="py-[40px]">
-      <div className="header_wrapper container flex flex-col md:flex-row items-center justify-between">
+    <header className="px-[30px] py-[40px] lg:px-0">
+      <div className="header_wrapper container md:flex flex-col md:flex-row items-center justify-between hidden">
         <div className="header_links w-full md:w-[40%]">
           <ul className="grid grid-cols-2 items-center justify-items-center md:justify-items-start">
             <li className="logo_wrapper mr-[30px] bg-black">
@@ -39,7 +40,7 @@ export const Header = () => {
               My Profile
             </Link>
           )}
-          <div className="registerBtns flex flex-row items-center justify-between border border-[0.5px] border-gray-500 py-1 px-3 rounded-full">
+          <div className="registerBtns flex flex-row items-center justify-between border-[0.5px] border-gray-500 py-1 px-3 rounded-full">
             <Link
               href="/login"
               alt="Login"
@@ -57,6 +58,7 @@ export const Header = () => {
           </div>
         </div>
       </div>
+      <BurgerMenu />
     </header>
   );
 };

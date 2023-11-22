@@ -9,7 +9,7 @@ export const Logo = () => {
       width={0}
       height={0}
       sizes="100vw"
-      className="w-[100%] h-auto"
+      className="w-[80%] md:w-[100%] h-auto"
     />
   );
 };
