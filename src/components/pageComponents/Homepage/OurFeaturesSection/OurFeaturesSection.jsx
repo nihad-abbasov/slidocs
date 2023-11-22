@@ -18,10 +18,10 @@ export const OurFeaturesSection = () => {
               key={feature.id}
               className="flex flex-row items-start justify-start gap-5 mb-[8%] last:mb-0"
             >
-              <div className="feature_icon bg-[url('/check.png')] bg-contain bg-no-repeat bg-center w-[50px] h-[50px] mt-[5px]"></div>
+              <div className="feature_icon bg-[url('/check.png')] bg-contain bg-no-repeat bg-center w-[70px] h-[70px] lg:w-[50px] lg:h-[50px] mt-[5px]"></div>
               <div className="feature_info">
                 <h6 className="text-lg font-bold mb-[10px]">{feature.name}</h6>
-                <p className="text-sm font-extralight w-[60%] text-justify">
+                <p className="text-sm font-extralight w-[90%] lg:w-[60%] text-justify">
                   {feature.content}
                 </p>
               </div>
