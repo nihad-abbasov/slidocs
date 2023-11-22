@@ -13,7 +13,7 @@ export const BurgerMenu = () => {
 
   useEffect(() => {
     setIsOpen(false);
-  }, []);
+  });
 
   return (
     <div className="relative md:hidden">
