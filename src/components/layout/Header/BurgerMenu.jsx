@@ -44,7 +44,7 @@ export const BurgerMenu = () => {
 
       {/* Menu Content */}
       <div
-        className={`menu-content flex flex-col fixed right-0 top-0 w-9/12 sm:w-6/12 h-full bg-white p-8 z-50 transform ${
+        className={`menu-content flex flex-col fixed right-0 top-0 w-9/12 sm:w-6/12 h-full bg-white p-3 z-50 transform ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         } transition duration-500 ease-in-out`}
       >
@@ -66,11 +66,11 @@ export const BurgerMenu = () => {
           </svg>
         </div>
 
-        <div className="registerBtns grid grid-cols-2 border-[0.5px] border-gray-500 py-1 px-3 mt-8 mb-3 rounded-full">
+        <div className="registerBtns grid grid-cols-2 border-[0.5px] border-gray-500 py-1 px-3 mt-[20%] mb-3 rounded-full">
           <Link
             href="/login"
             alt="Login"
-            className="py-[12px] px-[25px] mr-2 rounded-full bg-gray-300 text-black text-center hover:bg-gray-200 hover:scale-90 transition duration-300"
+            className="flex items-center justify-center px-2 py-0 mr-2 rounded-full bg-gray-300 text-black text-center hover:bg-gray-200 hover:scale-90 transition duration-300"
           >
             Login
           </Link>
@@ -94,7 +94,7 @@ export const BurgerMenu = () => {
         <Link
           href="/pricing"
           alt="Pricing"
-          className="w-full py-[12px] px-[25px] mr-3 mt-2s rounded-full bg-[#e2d634] text-black text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
+          className="w-full py-[12px] px-[25px] mr-3 mt-2 rounded-full bg-[#e2d634] text-black text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
         >
           Pricing
         </Link>
