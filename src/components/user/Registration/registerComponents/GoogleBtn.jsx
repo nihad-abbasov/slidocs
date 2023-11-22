@@ -1,6 +1,6 @@
 export const GoogleBtn = () => {
   return (
-    <button className="button w-full flex py-2 px-5 mb-10 text-sm leading-5 font-bold text-center uppercase align-middle items-center rounded-md border border-[rgba(0,0,0,0.25)] gap-3 text-[#413f3f] bg-white cursor-pointer duration-300 hover:scale-105 hover:duration-300 hover:text-white hover:bg-slate-400">
+    <button type="button" className="button w-full flex py-2 px-5 mb-10 text-sm leading-5 font-bold text-center uppercase align-middle items-center rounded-md border border-[rgba(0,0,0,0.25)] gap-3 text-[#413f3f] bg-white cursor-pointer duration-300 hover:scale-105 hover:duration-300 hover:text-white hover:bg-slate-400">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         preserveAspectRatio="xMidYMid"
