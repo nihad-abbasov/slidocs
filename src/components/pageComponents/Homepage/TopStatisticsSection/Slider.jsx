@@ -9,7 +9,7 @@ import { currentYear } from "../../../../utils/getTime";
 const SlideOptions = {
   type: "fade",
   rewind: true,
-  // autoplay: true,
+  autoplay: true,
   speed: 2000,
   interval: 3000,
   arrows: false,
