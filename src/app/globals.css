@@ -76,10 +76,17 @@ section:first-child {
 } */
 
 .splide__pagination {
-  bottom: 2rem !important;
+  /* bottom: 2rem !important; */
+  bottom: 0.5rem !important;
   border-top: 0.1px solid #fff;
   width: 80%;
   margin: 0 auto !important;
   padding-top: 1em !important;
   padding-bottom: 0.5em !important;
+}
+
+@media (min-width: 520px) {
+  .splide__pagination {
+    bottom: 2rem !important;
+  }
 }

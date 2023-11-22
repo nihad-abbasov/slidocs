@@ -10,7 +10,7 @@ export const TopStatisticsSection = () => {
       </article>
 
       <article className="stat_right w-full md:w-[40%] grid grid-cols-1 gap-4 justify-content-between">
-        <div className="stat_right_top w-full flex flex-col lg:grid lg:grid-cols-2 gap-4">
+        <div className="stat_right_top w-full grid md:grid-cols-2 gap-4">
           {smallCards.map((card) => {
             return (
               <div key={card.id} className="card lg:min-h-[230px]">
