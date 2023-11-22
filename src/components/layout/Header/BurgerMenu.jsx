@@ -13,7 +13,7 @@ export const BurgerMenu = () => {
 
   useEffect(() => {
     setIsOpen(false);
-  });
+  }, []);
 
   return (
     <div className="relative md:hidden">
@@ -47,6 +47,7 @@ export const BurgerMenu = () => {
         className={`menu-content flex flex-col fixed right-0 top-0 w-9/12 sm:w-6/12 h-full bg-white p-3 z-50 transform ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         } transition duration-500 ease-in-out`}
+        onClick={toggleMenu}
       >
         {/* Close Icon */}
         <div className="close-icon absolute top-7 right-7" onClick={toggleMenu}>
