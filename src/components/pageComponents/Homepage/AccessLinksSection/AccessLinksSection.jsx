@@ -25,10 +25,6 @@ export const AccessLinksSection = () => {
             Get Full Access for $39
           </Link>
         </div>
-
-        {/* <div className="w-[70%] m-auto absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <AccessButton />
-        </div> */}
       </article>
       <article className="grid grid-cols-1 justify-items-end gap-4 w-[100%] lg:w-[100%]">
         <Link

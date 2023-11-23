@@ -727,7 +727,7 @@ export const textRoutes = [
   {
     id: 1,
     url: "/about",
-    pageTitle: "About",
+    pageTitle: "About Us",
     pageContent: [
       "Welcome to our About page. Here, you can learn more about our mission and values. Our organization is committed to excellence and innovation in our field. We believe in creating value for our stakeholders and making a positive impact on society.",
       "Our team is dedicated to providing the best service to our clients. Each member brings unique skills and experiences to the table. Together, we work towards achieving outstanding results and exceeding expectations. We are passionate about what we do and always strive for excellence.",
@@ -737,7 +737,7 @@ export const textRoutes = [
   {
     id: 2,
     url: "/privacy",
-    pageTitle: "Privacy",
+    pageTitle: "Privacy Policy",
     pageContent: [
       "Your privacy is of utmost importance to us. We are committed to protecting your personal information and ensuring its confidentiality. Our privacy policy has been designed to inform you about how we collect, use, and safeguard your data. We adhere to the highest standards of data protection.",
       "This page outlines our privacy policy and how we handle your data. We are transparent about our data practices and believe in open communication with our users. You have the right to know how your information is being used and what measures we take to protect it.",
@@ -747,7 +747,7 @@ export const textRoutes = [
   {
     id: 3,
     url: "/terms",
-    pageTitle: "Terms",
+    pageTitle: "Terms & Conditions",
     pageContent: [
       "These are the terms and conditions for using our service. By accessing and using our platform, you agree to these terms. It's important that you understand them. Violation of any terms may result in termination of your access to our services.",
       "Please read these terms carefully before using our platform. They include crucial information about your legal rights and obligations. If you have any questions or concerns about these terms, feel free to contact us.",
@@ -757,7 +757,7 @@ export const textRoutes = [
   {
     id: 4,
     url: "/refund",
-    pageTitle: "Refund",
+    pageTitle: "Refund Policy",
     pageContent: [
       "We offer a transparent refund policy. Our aim is to make the process as straightforward and fair as possible. If you're not satisfied with our service, you may be eligible for a refund. Please review the following terms to understand our refund process.",
       "Find out how you can request a refund and the terms associated with it. We have a dedicated support team to assist you with refund queries. The eligibility for a refund depends on various factors, including the type of product or service purchased.",
@@ -766,10 +766,102 @@ export const textRoutes = [
   },
 ];
 
-// footer links
-export const footerElements = [
-  { id: 1, name: "About Us", url: "/about" },
-  { id: 2, name: "Terms & Conditions", url: "/terms" },
-  { id: 3, name: "Privacy Policy", url: "/privacy" },
-  { id: 4, name: "Refund", url: "/refund" },
+export const pricingPeriodBtns = [
+  { id: 1, name: "Monthly" },
+  { id: 2, name: "Annual (save 10%)" },
 ];
+
+export const pricingData = [
+  {
+    id: 1,
+    name: "Pro",
+    pricePeriods: {
+      monthly: {
+        rate: 30,
+        features: [
+          "3–5 day turnaround",
+          "Native Development",
+          "Task delivered one-by-one",
+          "Dedicated dashboard",
+          "Updates via Dashboard & Slack",
+        ],
+      },
+      anually: {
+        rate: 324, // 10% discount applied
+        features: [
+          "3–5 day turnaround",
+          "Native Development",
+          "Task delivered one-by-one",
+          "Dedicated dashboard",
+          "Updates via Dashboard & Slack",
+        ],
+      },
+    },
+  },
+  {
+    id: 2,
+    name: "Pro Plus",
+    pricePeriods: {
+      monthly: {
+        rate: 70,
+        features: [
+          "1–3 day turnaround",
+          "Monthly strategy call",
+          "Commercial license",
+          "Native Development",
+          "Tasks delivered one-by-one",
+          "Dedicated dashboard",
+          "Updates via Dashboard & Slack",
+        ],
+      },
+      anually: {
+        rate: 756, // 10% discount applied
+        features: [
+          "1–3 day turnaround",
+          "Monthly strategy call",
+          "Commercial license",
+          "Native Development",
+          "Tasks delivered one-by-one",
+          "Dedicated dashboard",
+          "Updates via Dashboard & Slack",
+        ],
+      },
+    },
+  },
+  {
+    id: 3,
+    name: "Custom",
+    pricePeriods: {
+      monthly: {
+        rate: "Custom", // Custom pricing can't be predetermined
+        features: [
+          "Everything in design & development",
+          "Strategy workshop",
+          "Priority support",
+          "Multiple tasks at once",
+          "Ongoing autonomous A/B testing",
+          "Advanced custom development",
+        ],
+      },
+      anually: {
+        rate: "Custom",
+        features: [
+          "Everything in design & development",
+          "Strategy workshop",
+          "Priority support",
+          "Multiple tasks at once",
+          "Ongoing autonomous A/B testing",
+          "Advanced custom development",
+        ],
+      },
+    },
+  },
+];
+
+// footer links
+// export const footerElements = [
+//   { id: 1, name: "About Us", url: "/about" },
+//   { id: 2, name: "Terms & Conditions", url: "/terms" },
+//   { id: 3, name: "Privacy Policy", url: "/privacy" },
+//   { id: 4, name: "Refund", url: "/refund" },
+// ];

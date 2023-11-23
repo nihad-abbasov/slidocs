@@ -95,7 +95,7 @@ export const BurgerMenu = () => {
         <Link
           href="/pricing"
           alt="Pricing"
-          className="w-full py-[12px] px-[25px] mr-3 mt-2 rounded-full bg-[#e2d634] text-black text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
+          className="w-full py-[12px] px-[25px] mr-3 mt-2 rounded-full bg-[#e2d634] text-black text-center inline-block hover:bg-[#de9149] hover:scale-105 transition duration-300 "
         >
           Pricing
         </Link>

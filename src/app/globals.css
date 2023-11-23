@@ -6,12 +6,36 @@
   animation: 2s fadeIn;
 }
 
+.glassWillSlide {
+  animation: 2s slideGlass infinite;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
+    transform: translateY(10%);
   }
   100% {
     opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideGlass {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes childrenEachFade {
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
 

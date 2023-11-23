@@ -1,7 +1,9 @@
 import { Logo } from "../../reusable/Logo";
 import Link from "next/link";
-import { footerElements } from "../../../../db";
+import { textRoutes } from "../../../../db";
 import { FooterElement } from "./FooterElement";
+
+// import { footerElements } from "../../../../db";
 
 export const Footer = () => {
   return (
@@ -16,11 +18,11 @@ export const Footer = () => {
           </p>
         </div>
         <div className="flex flex-col justify-evenly w-[100%] my-[2em]">
-          <h6 className="w-full mb-2 font-bold text-center md:text-left">
+          <h6 className="w-full mb-2 font-semibold text-center md:text-left">
             Navigation
           </h6>
           <ul className="flex flex-col w-full justify-between items-center md:items-start">
-            {footerElements.map((el) => {
+            {textRoutes.map((el) => {
               return <FooterElement key={el.id} element={el} />;
             })}
           </ul>
