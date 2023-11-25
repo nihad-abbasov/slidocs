@@ -2,8 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-// import { motion } from "framer-motion-3d";
-// import AccessButton from "./AccessButton/AccessButton";
 
 export const AccessLinksSection = () => {
   return (
