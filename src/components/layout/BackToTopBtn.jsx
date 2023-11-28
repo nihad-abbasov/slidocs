@@ -25,7 +25,7 @@ export const BackToTopBtn = () => {
     showButton && (
       <button
         onClick={scrollToTop}
-        className="BackToTopBtnWillRaise willFadeIn fixed right-[5%] bottom-[8%] lg:right-[52px] lg:bottom-[50px] z-30 flex items-center justify-center w-[50px] h-[50px] cursor-pointer bg-[#6B53FD] rounded-2xl hover:scale-90 transition duration-300"
+        className="BackToTopBtnWillRaise willFadeIn fixed right-[5%] bottom-[12%] lg:right-[52px] lg:bottom-[50px] z-30 flex items-center justify-center w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] cursor-pointer bg-[#6B53FD] rounded-2xl hover:scale-90 transition duration-300"
       >
         <svg
           stroke="currentColor"
