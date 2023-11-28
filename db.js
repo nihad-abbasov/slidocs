@@ -636,24 +636,6 @@ export const slides = [
     imgUrl: "/slide.webp",
     text: "Milan pirlo Ibrahimovic maldini cafu zidane",
   },
-  {
-    id: 4,
-    name: "Slide 4",
-    imgUrl: "/slide.webp",
-    text: "Pitch Deck Template that saves you ton of time",
-  },
-  {
-    id: 5,
-    name: "Slide 5",
-    imgUrl: "/slide.webp",
-    text: "Lorem ipsum sit amet nolin pilom kante kondogbia",
-  },
-  {
-    id: 6,
-    name: "Slide 6",
-    imgUrl: "/slide.webp",
-    text: "Milan pirlo Ibrahimovic maldini cafu zidane",
-  },
 ];
 
 export const smallCards = [

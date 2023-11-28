@@ -15,11 +15,13 @@ export const InformationalSection = () => {
               alt="Folder"
             />
           </li>
-          <li className="flex flex-col items-start font-bold text-4xl">
-            <p className="mb-[10px] leading-tight">
-              Perfect Pitch Deck without stress?
-            </p>
-            <p>Easy!</p>
+          <li>
+            <h3 className="flex flex-col items-start font-bold text-4xl">
+              <p className="mb-[10px] leading-tight w-[70%]">
+                Perfect Pitch Deck without stress?
+              </p>
+              <p>Easy!</p>
+            </h3>
           </li>
           <li className="flex flex-col items-start text-[#686868] text-base">
             Explore the library, find the perfect slides and collect your deck

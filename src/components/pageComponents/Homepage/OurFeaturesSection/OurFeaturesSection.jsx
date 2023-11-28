@@ -1,4 +1,5 @@
 import { features } from "../../../../../db";
+import Image from "next/image";
 
 export const OurFeaturesSection = () => {
   return (
@@ -11,7 +12,14 @@ export const OurFeaturesSection = () => {
         faster and easier
       </p>
       <article className="grid grid-cols-1 lg:grid-cols-2 gap-[20px]">
-        <div className="feature_img_wrapper bg-[url('/feature.webp')] bg-contain bg-no-repeat bg-center min-h-[250px] w-full"></div>
+        <Image
+          src="/feature.webp"
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="w-[70%] h-full rounded-[35px]"
+          alt="Get Full Access"
+        />
         <ul className="flex flex-col items-start justify-between w-full">
           {features.map((feature) => (
             <li

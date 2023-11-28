@@ -13,7 +13,7 @@ export const AccessLinksSection = () => {
             width={0}
             height={0}
             sizes="100vw"
-            className="w-full h-full rounded-full"
+            className="w-full h-full rounded-[35px]"
             alt="Get Full Access"
           />
           <Link

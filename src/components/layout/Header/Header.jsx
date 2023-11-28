@@ -3,7 +3,8 @@ import Link from "next/link";
 import { headerElements } from "../../../../db";
 import { HeaderElement } from "./HeaderElement";
 import { BurgerMenu } from "./BurgerMenu";
-import { Logo } from '../Logo';
+import { Logo } from "../Logo";
+import { ThemeSwitcher } from "../Theme/ThemeSwitcher";
 
 const isAuth = false;
 
@@ -40,7 +41,7 @@ export const Header = () => {
               My Profile
             </Link>
           ) : null}
-          <div className="registerBtns flex flex-row items-center justify-between border-[0.5px] border-gray-500 py-1 px-3 rounded-full">
+          <div className="registerBtns flex flex-row items-center justify-between py-1 px-3">
             <Link
               href="/login"
               alt="Login"
@@ -48,14 +49,8 @@ export const Header = () => {
             >
               Login
             </Link>
-            <Link
-              href="/sign_up"
-              alt="Sign Up"
-              className="py-[12px] px-[25px] rounded-full bg-black text-white text-center inline-block hover:bg-gray-700 hover:scale-90 transition duration-300 "
-            >
-              Sign Up
-            </Link>
           </div>
+          <ThemeSwitcher />
         </div>
       </div>
       <BurgerMenu />
