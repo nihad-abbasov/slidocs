@@ -31,7 +31,7 @@ export const Header = () => {
           >
             Buy Access
           </Link>
-          {isAuth && (
+          {isAuth ? (
             <Link
               href="/profile"
               alt="Buy Access"
@@ -39,7 +39,7 @@ export const Header = () => {
             >
               My Profile
             </Link>
-          )}
+          ) : null}
           <div className="registerBtns flex flex-row items-center justify-between border-[0.5px] border-gray-500 py-1 px-3 rounded-full">
             <Link
               href="/login"

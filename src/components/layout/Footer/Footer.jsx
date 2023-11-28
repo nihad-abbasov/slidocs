@@ -3,11 +3,9 @@ import Link from "next/link";
 import { textRoutes } from "../../../../db";
 import { FooterElement } from "./FooterElement";
 
-// import { footerElements } from "../../../../db";
-
 export const Footer = () => {
   return (
-    <footer className="footer_unique_container bg-white py-[3em] px-2 rounded-xl">
+    <footer className="footer_unique_container bg-white py-[3em] px-2 rounded-xl mb-[3em]">
       <div className="footer_wrapper grid grid-cols-1 md:grid-cols-3 justify-items-center">
         <div className="w-[60%] flex flex-col justify-between items-center md:items-start">
           <Link href="/" className="w-[80%]">

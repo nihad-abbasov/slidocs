@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const HeaderElement = ({ element }) => {
   return (
-    <li v className="mr-[10px] last:mr-0 block w-max">
+    <li className="mr-[10px] last:mr-0 block w-max">
       <Link
         href={`${element.url}`}
         alt={element.name}
