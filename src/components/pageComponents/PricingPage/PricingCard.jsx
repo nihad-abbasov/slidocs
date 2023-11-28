@@ -8,7 +8,7 @@ export const PricingCard = ({
 }) => {
   return (
     <li
-      className={`fadeIn flex flex-col justify-between relative rounded-2xl shadow-lg p-6 transition duration-500 hover:shadow-2xl hover:scale-105 ease-in-out cursor-pointer min-h-[500px] lg:min-h-[600px] ${
+      className={`fadeIn flex flex-col justify-between relative rounded-2xl shadow-lg p-6 transition duration-500 hover:shadow-2xl md:hover:scale-105 ease-in-out cursor-pointer min-h-[500px] lg:min-h-[600px] ${
         card.name == "Custom" ? "bg-purple-100" : "bg-white"
       }`}
       style={{ animation: `${card.id}s childrenEachFade` }}
