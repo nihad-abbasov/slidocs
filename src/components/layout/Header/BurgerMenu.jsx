@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Logo } from '../Logo';
-
+import { Logo } from "../Logo";
+import { ThemeSwitcher } from "../Theme/ThemeSwitcher";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -125,10 +125,8 @@ export const BurgerMenu = () => {
         </ul>
 
         {/* Theme Switcher Button */}
-        <div className="theme-switcher mt-auto">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white text-xs font-bold py-2 px-4 rounded">
-            Switch Theme
-          </button>
+        <div className="theme-switcher_onBurger mt-auto mb-[3%]">
+          <ThemeSwitcher />
         </div>
       </div>
     </div>
