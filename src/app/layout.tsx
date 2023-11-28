@@ -5,6 +5,7 @@ import { Header } from "../components/layout/Header/Header";
 import { Footer } from "../components/layout/Footer/Footer";
 import { Main } from "../components/layout/Main/Main";
 import { BottomNav } from "../components/layout/Header/BottomNav";
+import { BackToTopBtn } from "../components/layout/BackToTopBtn";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -31,6 +32,7 @@ export default function RootLayout({
         <Header />
         <Main>{children}</Main>
         <Footer />
+        <BackToTopBtn />
         <BottomNav />
       </body>
     </html>

@@ -1,7 +1,8 @@
-import { Logo } from "../../reusable/Logo";
 import Link from "next/link";
 import { textRoutes } from "../../../../db";
 import { FooterElement } from "./FooterElement";
+import { Logo } from "../Logo";
+import { currentYear } from "../../../utils/getTime";
 
 export const Footer = () => {
   return (
@@ -12,7 +13,8 @@ export const Footer = () => {
             <Logo />
           </Link>
           <p className="font-light text-sm">
-            &copy; 2023 <a href="https://www.slidocs.com">slidocs.com</a>
+            &copy; {currentYear}{" "}
+            <a href="https://www.slidocs.com">slidocs.com</a>
           </p>
         </div>
         <div className="flex flex-col justify-evenly w-[100%] my-[2em]">

@@ -2,7 +2,8 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Logo } from "../../reusable/Logo";
+import { Logo } from '../Logo';
+
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);

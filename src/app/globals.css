@@ -10,6 +10,10 @@
   animation: 2s slideGlass infinite;
 }
 
+.BackToTopBtnWillRaise {
+  animation: backToTopBtnAnimation 1.5s infinite;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -33,6 +37,18 @@
 @keyframes childrenEachFade {
   0% {
     transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes backToTopBtnAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
   100% {
     transform: translateY(0);

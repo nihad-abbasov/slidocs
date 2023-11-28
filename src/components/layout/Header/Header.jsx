@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Logo } from "../../reusable/Logo";
 import { headerElements } from "../../../../db";
 import { HeaderElement } from "./HeaderElement";
 import { BurgerMenu } from "./BurgerMenu";
+import { Logo } from '../Logo';
 
 const isAuth = false;
 
