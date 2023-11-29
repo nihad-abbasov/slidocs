@@ -1,7 +1,18 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export const BottomNav = () => {
-  return (
+  const [showBottomNav, setShowBottomNav] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      window.pageYOffset > 1200 && setShowBottomNav(true);
+    });
+  }, []);
+
+  return showBottomNav ? (
     <nav className="willFadeIn grid grid-cols-2 gap-3 w-full py-3 px-2 fixed bottom-0 z-20 bg-white rounded-tl-3xl rounded-tr-3xl md:hidden">
       <Link
         href="/buy-access"
@@ -19,5 +30,5 @@ export const BottomNav = () => {
         Pricing
       </Link>
     </nav>
-  );
+  ) : null;
 };

@@ -16,8 +16,8 @@ export const InformationalSection = () => {
             />
           </li>
           <li>
-            <h3 className="flex flex-col items-start font-bold text-4xl">
-              <p className="mb-[10px] leading-tight w-[70%]">
+            <h3 className="flex flex-col items-start font-bold text-4xl my-[20px]">
+              <p className="mb-[10px] leading-tight w-full lg:w-[70%]">
                 Perfect Pitch Deck without stress?
               </p>
               <p>Easy!</p>
