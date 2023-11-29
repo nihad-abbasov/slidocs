@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import { headerElements } from "../../../../db";
@@ -5,12 +7,48 @@ import { HeaderElement } from "./HeaderElement";
 import { BurgerMenu } from "./BurgerMenu";
 import { Logo } from "../Logo";
 import { ThemeSwitcher } from "../Theme/ThemeSwitcher";
+import { useState, useEffect } from "react";
 
 const isAuth = false;
 
 export const Header = () => {
+  const [isHeaderSticky, setIsHeaderSticky] = useState(false);
+
+  useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
+    const handleScroll = () => {
+      if (window.pageYOffset > 50) {
+        setIsHeaderSticky(true);
+      } else {
+        setIsHeaderSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+
+    setMiniCartOpen(false);
+  }, []);
+
+  const stickyClassName = isHeaderSticky
+    ? "headerWillFade fixed top-0 left-0 w-full z-50 py-[15px] px-[15px] !lg:py-[5px] lg:px-[0] bg-white"
+    : "";
+
+  const headerBoxShadowStyle = isHeaderSticky
+    ? "0 2px 24px 0 rgba(0, 0, 0, 0.15)"
+    : "none";
+
   return (
-    <header className="px-[30px] py-[40px] lg:px-0">
+    <header
+      className={`lg:py-[10px] ${stickyClassName}`}
+      style={{ boxShadow: headerBoxShadowStyle }}
+    >
       <div className="header_wrapper container md:flex flex-col md:flex-row items-center justify-between hidden">
         <div className="header_links w-full md:w-[40%]">
           <ul className="grid grid-cols-2 items-center justify-items-center md:justify-items-start">

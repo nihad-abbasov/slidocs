@@ -17,7 +17,7 @@ export const OurFeaturesSection = () => {
           width={0}
           height={0}
           sizes="100vw"
-          className="w-[70%] h-full rounded-[35px]"
+          className="w-[80%] mx-auto lg:w-[70%] h-full rounded-[35px]"
           alt="Get Full Access"
         />
         <ul className="flex flex-col items-start justify-between w-full">
