@@ -7,7 +7,7 @@ import { MoonIcon } from "./themeIcons/MoonIcon";
 import { SunIcon } from "./themeIcons/SunIcon";
 
 export const ThemeSwitcher = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme, setTheme } = useTheme("light");
 
   const toggleTheme = () => {
     setTheme(theme === "dark" ? "light" : "dark");

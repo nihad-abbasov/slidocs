@@ -28,9 +28,9 @@ export const BurgerMenu = () => {
           <div
             className={`burger-menu space-y-2 ${isOpen ? "hidden" : "block"}`}
           >
-            <div className="line bg-gray-600 h-1 w-8 rounded-full"></div>
-            <div className="line bg-gray-600 h-1 w-8 rounded-full"></div>
-            <div className="line bg-gray-600 h-1 w-8 rounded-full"></div>
+            <div className="line bg-gray-600 dark:bg-slate-100 h-1 w-8 rounded-full"></div>
+            <div className="line bg-gray-600 dark:bg-slate-100 h-1 w-8 rounded-full"></div>
+            <div className="line bg-gray-600 dark:bg-slate-100 h-1 w-8 rounded-full"></div>
           </div>
         </div>
       </div>
@@ -45,7 +45,7 @@ export const BurgerMenu = () => {
 
       {/* Menu Content */}
       <div
-        className={`menu-content flex flex-col fixed right-0 top-0 w-9/12 sm:w-6/12 h-full bg-white p-3 z-50 transform ${
+        className={`menu-content flex flex-col fixed right-0 top-0 w-9/12 sm:w-6/12 h-full bg-white dark:bg-slate-800 p-3 z-50 transform ${
           isOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"
         } transition duration-500 ease-in-out`}
         onClick={toggleMenu}
@@ -54,7 +54,6 @@ export const BurgerMenu = () => {
         <div className="close-icon absolute top-7 right-7" onClick={toggleMenu}>
           <svg
             className="w-6 h-6"
-            fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
@@ -64,11 +63,12 @@ export const BurgerMenu = () => {
               strokeLinejoin="round"
               strokeWidth="2"
               d="M6 18L18 6M6 6l12 12"
+              className="stroke-black dark:stroke-white"
             ></path>
           </svg>
         </div>
 
-        <div className="registerBtns grid grid-cols-2 border-[0.5px] border-gray-500 py-1 px-3 mt-[20%] mb-3 rounded-full">
+        {/* <div className="registerBtns grid grid-cols-2 border-[0.5px] border-gray-500 py-1 px-3 mt-[20%] mb-3 rounded-full">
           <Link
             href="/login"
             alt="Login"
@@ -83,7 +83,7 @@ export const BurgerMenu = () => {
           >
             Sign Up
           </Link>
-        </div>
+        </div> */}
 
         {/* <Link
           href="/buy-access"
@@ -101,24 +101,33 @@ export const BurgerMenu = () => {
           Pricing
         </Link> */}
 
-        <ul className="page-links mt-8">
+        <ul className="page-links mt-[25%]">
           <li>
-            <Link href="/" className="block py-2">
+            <Link href="/" className="block py-2 text-black dark:text-white">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/info/about" className="block py-2">
+            <Link
+              href="/info/about"
+              className="block py-2 text-black dark:text-white"
+            >
               About
             </Link>
           </li>
           <li>
-            <Link href="/info/contact" className="block py-2">
+            <Link
+              href="/info/contact"
+              className="block py-2 text-black dark:text-white"
+            >
               Contact
             </Link>
           </li>
           <li>
-            <Link href="/info/refund" className="block py-2">
+            <Link
+              href="/info/refund"
+              className="block py-2 text-black dark:text-white"
+            >
               Refund
             </Link>
           </li>

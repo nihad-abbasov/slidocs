@@ -33,7 +33,7 @@ export default function RootLayout({
 
     <html suppressHydrationWarning={true} lang="en">
       <body
-        className={`${poppins.className} dark:bg-gray-800 bg-gray-100 transition duration-300 !text-black !dark:text-white`}
+        className={`${poppins.className} dark:bg-gray-800 bg-gray-100 transition duration-200 !text-black !dark:text-white`}
       >
         <ThemeProvider>
           <Header />
