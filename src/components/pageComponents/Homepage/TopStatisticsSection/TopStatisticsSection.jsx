@@ -25,7 +25,7 @@ export const TopStatisticsSection = () => {
                       alt="Folder"
                     />
                   </li>
-                  <li className="w-full flex flex-col items-start">
+                  <li className="w-full flex flex-col items-start justify-center">
                     <span className="font-semibold text-4xl">
                       {card.number}
                     </span>
@@ -37,9 +37,9 @@ export const TopStatisticsSection = () => {
           })}
         </div>
         <div className="stat_right_bottom w-full">
-          <div className="card flex flex-row justify-between items-center !p-[2em] md:!py-[4em] md:!px-[2em]">
+          <div className="card flex flex-row justify-start items-center gap-5 h-full !p-[2em] md:!py-[4em] md:!px-[2em]">
             <h3>Works with:</h3>
-            <ul className="flex flex-row justify-between items-center">
+            <ul className="flex flex-row justify-between items-center gap-3">
               {platforms.map((plat) => {
                 return (
                   <li

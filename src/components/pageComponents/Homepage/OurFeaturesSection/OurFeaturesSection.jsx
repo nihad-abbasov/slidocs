@@ -4,10 +4,10 @@ import Image from "next/image";
 export const OurFeaturesSection = () => {
   return (
     <section className="willFadeIn flex flex-col items-center justify-between !mt-[10%]">
-      <h6 className="mb-[15px] text-2xl font-bold text-center">
+      <h6 className="mb-[15px] text-2xl font-bold text-center text-black dark:text-white">
         Ready to Level Up?
       </h6>
-      <p className="mb-[6%] font-extralight text-center">
+      <p className="mb-[6%] font-extralight text-center text-black dark:text-white">
         Explore the library, find the perfect slides and collect your deck
         faster and easier
       </p>
@@ -28,8 +28,10 @@ export const OurFeaturesSection = () => {
             >
               <div className="feature_icon bg-[url('/check.png')] bg-contain bg-no-repeat bg-center w-[70px] h-[70px] lg:w-[50px] lg:h-[50px] mt-[5px]"></div>
               <div className="feature_info">
-                <h6 className="text-lg font-bold mb-[10px]">{feature.name}</h6>
-                <p className="text-sm font-extralight w-[90%] lg:w-[60%] text-justify">
+                <h6 className="text-lg font-bold mb-[10px] text-black dark:text-white">
+                  {feature.name}
+                </h6>
+                <p className="text-sm font-extralight w-[90%] lg:w-[60%] text-justify text-black dark:text-white">
                   {feature.content}
                 </p>
               </div>

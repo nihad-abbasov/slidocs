@@ -20,14 +20,14 @@ export const PricingPage = () => {
 
   return (
     <section className="willFadeIn w-full flex flex-col items-center justify-between">
-      <h1 className="text-4xl font-bold text-center tracking-wide leading-7 text-black mb-[8%] lg:mb-[3%]">
+      <h1 className="text-4xl font-bold text-center tracking-wide leading-7 text-black dark:text-white mb-[8%] lg:mb-[3%]">
         Choose your right plan!
       </h1>
       <article className="flex flex-col items-center justify-between mb-[8%] lg:mb-[3%]">
-        <p className="text-sm font-light text-center text-gray-400 mb-1">
+        <p className="text-sm font-light text-center text-gray-400 dark:text-gray-200 mb-1">
           Select from best plans, ensuring a perfect match. Need more or less?
         </p>
-        <p className="text-sm font-light text-center text-gray-400 mb-1">
+        <p className="text-sm font-light text-center text-gray-400 dark:text-gray-200 mb-1">
           Customize your subscription for a seamless fit!
         </p>
       </article>

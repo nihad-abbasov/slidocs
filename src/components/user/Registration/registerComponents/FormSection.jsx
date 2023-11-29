@@ -10,8 +10,10 @@ export const FormSection = ({ isLogin }) => {
   return (
     <div className="form_wrapper w-full flex flex-col items-center justify-around">
       <header>
-        <h2 className="text-lg font-medium text-center mb-4">{title}</h2>
-        <p className="text-xs font-normal text-center tracking-wider mb-6">
+        <h2 className="text-lg font-medium text-center mb-4 text-black dark:text-white">
+          {title}
+        </h2>
+        <p className="text-xs font-normal text-center tracking-wider mb-6 text-black dark:text-white">
           We suggest using the email adress you use at work
         </p>
       </header>

@@ -6,19 +6,19 @@ import { currentYear } from "../../../utils/getTime";
 
 export const Footer = () => {
   return (
-    <footer className="footer_unique_container bg-white py-[3em] px-2 rounded-xl !mb-[3em]">
+    <footer className="footer_unique_container bg-white dark:bg-slate-600 py-[3em] px-2 rounded-xl !mb-[3em]">
       <div className="footer_wrapper grid grid-cols-1 md:grid-cols-3 justify-items-center">
         <div className="w-[60%] flex flex-col justify-between items-center md:items-start">
           <Link href="/" className="w-[80%]">
             <Logo />
           </Link>
-          <p className="font-light text-sm">
+          <p className="font-light text-sm text-black dark:text-white">
             &copy; {currentYear}{" "}
             <a href="https://www.slidocs.com">slidocs.com</a>
           </p>
         </div>
         <div className="flex flex-col justify-evenly w-[100%] my-[2em]">
-          <h6 className="w-full mb-2 font-semibold text-center md:text-left">
+          <h6 className="w-full mb-2 font-semibold text-center md:text-left text-black dark:text-white">
             Navigation
           </h6>
           <ul className="flex flex-col w-full justify-between items-center md:items-start">

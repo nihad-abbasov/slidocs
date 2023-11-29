@@ -13,9 +13,9 @@ export const TemplatesSection = () => {
           href="/templates"
           // target="_blank"
           // rel="noopener noreferrer"
-          className="bg-black text-white py-2 px-4 md:p-5 rounded-full hover:shadow-2xl transition-shadow duration-300 whitespace-nowrap overflow-hidden text-ellipsis flex flex-row items-center justify-between"
+          className="bg-black dark:bg-white text-white dark:text-black py-2 px-4 md:p-5 rounded-full hover:shadow-2xl transition-shadow duration-300 whitespace-nowrap overflow-hidden text-ellipsis flex flex-row items-center justify-between"
         >
-          <IoIosArrowForward className="bg-white fill-black p-4 rounded-full mr-3 w-full h-full" />
+          <IoIosArrowForward className="bg-white dark:bg-black fill-black dark:fill-white p-4 rounded-full mr-3 w-full h-full" />
           <span>See all slides</span>
         </Link>
       </article>

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const DisclaimerText = () => {
   return (
-    <p className="text-xs text-center">
+    <p className="text-xs text-center text-black dark:text-white">
       By creating account you agree to our&nbsp;
       <Link
         className="font-semibold hover:underline"
