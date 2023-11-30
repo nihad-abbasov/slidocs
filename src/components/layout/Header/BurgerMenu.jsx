@@ -17,7 +17,7 @@ export const BurgerMenu = ({ isHeaderSticky }) => {
   }, []);
 
   const hamburgerMenuLinesColor = isHeaderSticky
-    ? "dark:bg-gray-600"
+    ? "bg-gray-600"
     : "bg-gray-600 dark:bg-slate-100";
 
   return (
