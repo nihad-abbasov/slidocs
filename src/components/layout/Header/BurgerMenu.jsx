@@ -120,6 +120,14 @@ export const BurgerMenu = ({ isHeaderSticky }) => {
           </li>
           <li>
             <Link
+              href="/templates"
+              className="block py-2 text-black dark:text-white"
+            >
+              Templates
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/info/about"
               className="block py-2 text-black dark:text-white"
             >
@@ -136,10 +144,34 @@ export const BurgerMenu = ({ isHeaderSticky }) => {
           </li>
           <li>
             <Link
+              href="/info/terms"
+              className="block py-2 text-black dark:text-white"
+            >
+              Terms & Conditions
+            </Link>
+          </li>
+          <li>
+            <Link
+              href="/info/privacy"
+              className="block py-2 text-black dark:text-white"
+            >
+              Privacy Policy
+            </Link>
+          </li>
+          <li>
+            <Link
               href="/info/refund"
               className="block py-2 text-black dark:text-white"
             >
               Refund
+            </Link>
+          </li>
+          <li className="border-t border-gray-400 mt-3">
+            <Link
+              href="mailto:hello@slidocs.com"
+              className="block py-2 text-xs text-black dark:text-white"
+            >
+              hello@slidocs.com
             </Link>
           </li>
         </ul>
