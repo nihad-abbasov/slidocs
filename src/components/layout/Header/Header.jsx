@@ -37,8 +37,8 @@ export const Header = () => {
   }, []);
 
   const stickyClassName = isHeaderSticky
-    ? "headerWillFade fixed top-0 left-0 w-full z-50 py-[15px] px-[15px] !lg:py-[5px] lg:px-[0] bg-white"
-    : "";
+    ? "headerWillFade fixed top-0 left-0 w-full z-50 py-[15px] px-[10px] !lg:py-[5px] lg:px-[0] bg-white"
+    : "py-[15px] px-[10px] lg:py-[30px] lg:px-0 ";
 
   const headerBoxShadowStyle = isHeaderSticky
     ? "0 2px 24px 0 rgba(0, 0, 0, 0.15)"
@@ -46,7 +46,7 @@ export const Header = () => {
 
   return (
     <header
-      className={`lg:py-[10px] ${stickyClassName}`}
+      className={`${stickyClassName}`}
       style={{ boxShadow: headerBoxShadowStyle }}
     >
       <div className="header_wrapper container md:flex flex-col md:flex-row items-center justify-between hidden">
@@ -91,7 +91,7 @@ export const Header = () => {
           <ThemeSwitcher />
         </div>
       </div>
-      <BurgerMenu />
+      <BurgerMenu isHeaderSticky={isHeaderSticky} />
     </header>
   );
 };

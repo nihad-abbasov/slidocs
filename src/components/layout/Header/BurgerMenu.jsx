@@ -5,7 +5,7 @@ import Link from "next/link";
 import { Logo } from "../Logo";
 import { ThemeSwitcher } from "../Theme/ThemeSwitcher";
 
-export const BurgerMenu = () => {
+export const BurgerMenu = ({ isHeaderSticky }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,6 +15,10 @@ export const BurgerMenu = () => {
   useEffect(() => {
     setIsOpen(false);
   }, []);
+
+  const hamburgerMenuLinesColor = isHeaderSticky
+    ? "dark:bg-gray-600"
+    : "bg-gray-600 dark:bg-slate-100";
 
   return (
     <div className="relative md:hidden">
@@ -28,9 +32,16 @@ export const BurgerMenu = () => {
           <div
             className={`burger-menu space-y-2 ${isOpen ? "hidden" : "block"}`}
           >
-            <div className="line bg-gray-600 dark:bg-slate-100 h-1 w-8 rounded-full"></div>
-            <div className="line bg-gray-600 dark:bg-slate-100 h-1 w-8 rounded-full"></div>
-            <div className="line bg-gray-600 dark:bg-slate-100 h-1 w-8 rounded-full"></div>
+            <div
+              className={`${hamburgerMenuLinesColor} line h-1 w-8 rounded-full`}
+            ></div>
+
+            <div
+              className={`${hamburgerMenuLinesColor} line h-1 w-8 rounded-full`}
+            ></div>
+            <div
+              className={`${hamburgerMenuLinesColor} line h-1 w-8 rounded-full`}
+            ></div>
           </div>
         </div>
       </div>
