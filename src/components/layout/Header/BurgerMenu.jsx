@@ -16,15 +16,15 @@ export const BurgerMenu = ({ isHeaderSticky }) => {
     setIsOpen(false);
   }, []);
 
-  const hamburgerMenuLinesColor = isHeaderSticky
-    ? "bg-gray-600"
-    : "bg-gray-600 dark:bg-slate-100";
+  // const hamburgerMenuLinesColor = isHeaderSticky
+  //   ? "bg-gray-600"
+  //   : "bg-gray-600";
 
   return (
     <div className="relative md:hidden">
       <div className="grid grid-cols-2 items-center">
         <Link href="/" className="w-[80%]">
-          <Logo />
+          <Logo layout="header" />
         </Link>
         {/* Burger Icon */}
         {/* top-0 */}
@@ -32,16 +32,9 @@ export const BurgerMenu = ({ isHeaderSticky }) => {
           <div
             className={`burger-menu space-y-2 ${isOpen ? "hidden" : "block"}`}
           >
-            <div
-              className={`${hamburgerMenuLinesColor} line h-1 w-8 rounded-full`}
-            ></div>
-
-            <div
-              className={`${hamburgerMenuLinesColor} line h-1 w-8 rounded-full`}
-            ></div>
-            <div
-              className={`${hamburgerMenuLinesColor} line h-1 w-8 rounded-full`}
-            ></div>
+            <div className="line bg-gray-600 h-1 w-8 rounded-full"></div>
+            <div className="line bg-gray-600 h-1 w-8 rounded-full"></div>
+            <div className="line bg-gray-600 h-1 w-8 rounded-full"></div>
           </div>
         </div>
       </div>

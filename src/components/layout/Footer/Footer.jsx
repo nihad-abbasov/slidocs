@@ -10,7 +10,7 @@ export const Footer = () => {
       <div className="footer_wrapper grid grid-cols-1 md:grid-cols-3 justify-items-center">
         <div className="w-[60%] flex flex-col justify-between items-center md:items-start">
           <Link href="/" className="w-[80%]">
-            <Logo />
+            <Logo layout="footer" />
           </Link>
           <p className="font-light text-sm text-black dark:text-white">
             &copy; {currentYear}{" "}

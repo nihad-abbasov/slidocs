@@ -37,8 +37,8 @@ export const Header = () => {
   }, []);
 
   const stickyClassName = isHeaderSticky
-    ? "headerWillFade fixed top-0 left-0 w-full z-50 py-[15px] px-[10px] !lg:py-[5px] lg:px-[0] bg-white"
-    : "py-[15px] px-[10px] lg:py-[30px] lg:px-0 ";
+    ? "headerWillFade fixed top-0 left-0 w-full z-50 py-[15px] px-[10px] !lg:py-[5px] lg:px-[0] bg-white/[.8]"
+    : "py-[15px] px-[10px] lg:py-[15px] lg:px-0 bg-white";
 
   const headerBoxShadowStyle = isHeaderSticky
     ? "0 2px 24px 0 rgba(0, 0, 0, 0.15)"
@@ -52,9 +52,9 @@ export const Header = () => {
       <div className="header_wrapper container md:flex flex-col md:flex-row items-center justify-between hidden">
         <div className="header_links w-full md:w-[40%]">
           <ul className="grid grid-cols-2 items-center justify-items-center md:justify-items-start">
-            <li className="logo_wrapper mr-[30px] bg-black">
+            <li className="logo_wrapper mr-[30px]">
               <Link href="/">
-                <Logo />
+                <Logo layout="header" />
               </Link>
             </li>
             {headerElements.map((el) => {

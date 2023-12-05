@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title: "Slidocs | Best Slides",
   description: "Get Your slides from us!",
   icons: {
-    icon: "./favicon.png",
+    icon: "./favicon.ico",
   },
 };
 
