@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --form-control-disabled: #959495;
+}
+
+body {
+  scroll-behavior: smooth !important;
+}
+
 .willFadeIn {
   animation: 2s fadeIn;
 }
@@ -145,3 +153,44 @@ section:first-child {
     bottom: 2rem !important;
   }
 }
+
+#remember {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  margin: 0;
+  font: inherit;
+  color: currentColor;
+  width: 1em;
+  height: 1em;
+  border: 1px solid currentColor;
+  border-radius: 0.15em;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+#remember::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em #fff;
+  background-color: CanvasText;
+  transform-origin: bottom left;
+  clip-path: polygon(14% 44%, 0 55%, 50% 100%, 100% 1%, 88% 10%, 43% 62%);
+}
+
+#remember:checked::before {
+  transform: scale(1);
+}
+
+#remember:checked {
+  background: purple;
+}
+
+/* #remember:focus {
+  outline: max(2px, 0.15em) solid currentColor;
+  outline-offset: max(2px, 0.15em);
+} */

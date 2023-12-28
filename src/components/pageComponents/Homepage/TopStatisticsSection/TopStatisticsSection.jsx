@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Slider } from "./Slider";
 import { smallCards, platforms } from "../../../../../db";
+import { PlatformsAvailable } from '../../../layout/PlatformsAvailable';
 
 export const TopStatisticsSection = () => {
   return (
@@ -39,26 +40,7 @@ export const TopStatisticsSection = () => {
         <div className="stat_right_bottom w-full">
           <div className="card flex flex-row justify-start items-center gap-5 h-full !p-[2em] md:!py-[4em] md:!px-[2em]">
             <h3>Works with:</h3>
-            <ul className="flex flex-row justify-between items-center gap-3">
-              {platforms.map((plat) => {
-                return (
-                  <li
-                    key={plat.id}
-                    style={{ background: `${plat.bgColor}` }}
-                    className="w-[30%] p-1 rounded-3xl"
-                  >
-                    <Image
-                      width={0}
-                      height={0}
-                      sizes="100vw"
-                      className="w-full h-auto"
-                      src={plat.imgUrl}
-                      alt={plat.name}
-                    />
-                  </li>
-                );
-              })}
-            </ul>
+            <PlatformsAvailable />
           </div>
         </div>
       </article>

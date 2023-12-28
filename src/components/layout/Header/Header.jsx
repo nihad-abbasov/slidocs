@@ -64,7 +64,7 @@ export const Header = () => {
         </div>
         <div className="header_actions mt-4 md:mt-0 flex flex-row items-center justify-between w-full md:w-auto">
           <Link
-            href="/buy-access"
+            href="/#buy-access"
             alt="Buy Access"
             className="py-[12px] px-[25px] mr-3 rounded-full bg-[#6B53FD] text-white text-center inline-block hover:bg-[#5e49de] hover:scale-105 transition duration-300 "
           >

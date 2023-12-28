@@ -31,7 +31,7 @@ export default function RootLayout({
     // suppressHydrationWarning={true} has been added to html tag
     // due to the warning: extra attributes from the server: class,style  (attribute="class" on Themeprovider)
 
-    <html suppressHydrationWarning={true} lang="en">
+    <html suppressHydrationWarning={true} lang="en" className="scroll-smooth">
       <body
         className={`${poppins.className} dark:bg-gray-800 bg-gray-100 transition duration-200 !text-black !dark:text-white`}
       >

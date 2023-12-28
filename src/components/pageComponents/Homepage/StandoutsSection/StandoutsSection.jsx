@@ -3,7 +3,7 @@ import { standouts } from "../../../../../db";
 
 export const StandoutsSection = () => {
   return (
-    <section className="willFadeIn">
+    <section id="buy-access" className="willFadeIn">
       <article>
         <h2 className="font-semibold text-4xl text-center lg:text-left text-black dark:text-white mb-[1em]">
           We Stand Out

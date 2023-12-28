@@ -9,7 +9,7 @@ export const TemplateCard = ({ template }) => {
         className="w-[90%] mx-auto px-5 py-7 flex flex-col justify-between items-center gap-3"
       >
         <Image
-          src={template.imgUrl}
+          src={template.imageUrls[0].url}
           alt={template.name}
           width={0}
           height={0}

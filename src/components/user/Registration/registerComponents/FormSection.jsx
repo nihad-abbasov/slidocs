@@ -10,10 +10,10 @@ export const FormSection = ({ isLogin }) => {
   return (
     <div className="form_wrapper w-full flex flex-col items-center justify-around">
       <header>
-        <h2 className="text-lg font-medium text-center mb-4 text-black dark:text-white">
+        <h2 className="text-2xl font-bold text-center mb-4 text-black dark:text-white">
           {title}
         </h2>
-        <p className="text-xs font-normal text-center tracking-wider mb-6 text-black dark:text-white">
+        <p className="text-sm font-normal text-center tracking-wide mb-6 text-black dark:text-white">
           We suggest using the email adress you use at work
         </p>
       </header>
@@ -56,6 +56,15 @@ export const FormSection = ({ isLogin }) => {
               }}
             />
           </>
+        )}
+        {isLogin && (
+          <div className="my-3 w-full flex flex-row justify-between items-center">
+            <fieldset className="flex flex-row justify-between items-center gap-1">
+              <input type="checkbox" name="remember" id="remember" />
+              <label htmlFor="remember" className="text-sm">Remember me</label>
+            </fieldset>
+            <fieldset className="text-sm hover:underline cursor-pointer">Forgot Password?</fieldset>
+          </div>
         )}
         <FormBtn>{title}</FormBtn>
 
